@@ -1,0 +1,11 @@
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#jpype
+
+jdk 버전에 맞게 설치해야함
+jdk-11.0.7의 경우 : JPype1‑0.7.5‑cp37‑cp37m‑win_amd64.whl
+
+C:\Users 에 borab라는 파일을 만들고 다운 받는 jpype를 옮기고
+
+anaconda prompt:
+ C:\Users\borab로 경로를 이동하고 dir을 확인하여 잘 들어갔는지 본다
+ pip install JPype1‑0.7.5‑cp37‑cp37m‑win_amd64.whl
+ pip install konlpy
