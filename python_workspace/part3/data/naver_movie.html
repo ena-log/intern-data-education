@@ -1,0 +1,1931 @@
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+
+	
+	
+	
+	
+		
+			
+				
+			
+			
+			
+			
+		
+	
+	
+		
+	
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+
+
+
+<meta property="me2:image" content="http://imgmovie.naver.com/today/naverme/naverme_profile.jpg"/>
+<meta property="me2:post_tag" content="네이버영화 "/>
+<meta property="me2:category1" content="네이버영화"/>
+<meta property="me2:category2" content=""/>
+
+
+
+
+
+	
+	
+	
+	
+		<meta property="og:title" content="평점 : 네이버 영화"/>
+		<meta property="og:description" content="네티즌 평점과 리뷰 정보 제공"/>
+	
+	
+	
+
+
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://movie.naver.com/movie/point/af/list.nhn"/>
+
+	
+	
+		<meta property="og:image" content="http://static.naver.net/m/movie/icons/OG_270_270.png"/><!-- http://static.naver.net/m/movie/im/navermovie.jpg -->
+	
+
+
+<meta property="og:article:thumbnailUrl" content="http://imgmovie.naver.com/today/naverme/naverme_profile.jpg"/>
+<meta property="og:article:author" content="네이버 영화"/>
+<meta property="og:article:author:url" content="https://movie.naver.com/"/>
+
+
+
+
+
+	
+	
+	
+	
+		<link rel="shortcut icon" href="https://ssl.pstatic.net/static/m/movie/icons/naver_movie_favicon.ico" type="image/x-icon">
+			
+
+
+<title>네티즌 평점 : 네이버 영화</title>
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+		
+		<link rel="stylesheet" type="text/css" href="/common/css/movie_tablet.css?20200604115213">
+		<link rel="stylesheet" type="text/css" href="/common/css/common.css?20200604115213">
+		<link rel="stylesheet" type="text/css" href="/common/css/layout.css?20200604115213">
+		<link rel="stylesheet" type="text/css" href="/common/css/old_default.css?20200604115213">
+		<link rel="stylesheet" type="text/css" href="/common/css/old_layout.css?20200604115213">
+		<link rel="stylesheet" type="text/css" href="/common/css/old_common.css?20200604115213">	
+		<link rel="stylesheet" type="text/css" href="/common/css/old_community.css?20200604115213">
+	
+	
+	
+
+
+<script type="text/javascript" src="/common/js/default-min.js"></script>
+<script language="JavaScript" src="/common/js/jindo2.js"></script>
+<script language="JavaScript" src="/common/js/pwm.js"></script>
+<script type="text/javascript">
+
+	var pwmManager = new PwmManager();
+	
+	function find_list(st, sword, target) {
+		if (st == "nickname" || st == "nickname_before") {
+			if (target == "before") {
+				location.href = "/movie/point/af/list.nhn?st=nickname_before&sword=" + sword + "&target=before";
+			} else {
+				location.href = "/movie/point/af/list.nhn?st=nickname&sword=" + sword + "&target=after";
+			}
+		} else {
+			location.href = "?st=" + st + "&sword=" + sword + "&target=" + target;
+		}
+	}
+	
+	function login_check() {
+		if("" == ""){
+			if(confirm("로그인이 필요합니다. 로그인 하시겠습니까?")){
+				goLogin();
+			}
+			return false;
+		}
+	}
+	
+	function goLogin() {
+		location.href="https://nid.naver.com/nidlogin.login?mode=form&url="+encodeURIComponent(location.href);
+	}
+	
+	function deletePoint(nid, target) {
+		if( 'Y' == 'N' || 'Y' == 'G' ) {
+			openNotify('Y', '');
+			return;
+		}
+		
+		var tmp = document.delete_point_form;
+		tmp.target.value = target;
+		tmp.nid.value = nid;
+		
+		if(confirm("사용자 삭제시 복원 할 수 없습니다.정말로 삭제 하시겠습니까?")){
+			tmp.submit();
+		}
+		return;
+	}
+	
+	var gradePopupWin;
+	function openRulePopup() {
+		if (screen === undefined || screen.availHeight === undefined || screen.availHeight > 800) {
+			gradePopupWin = window.open("/movie/board/popup/board_rule.nhn", "gradePopup", "width=550, height=800, history=no, resizable=no, scrollbars=yes, status=no, menubar=no, toolbar=no");
+		} else {
+			gradePopupWin = window.open("/movie/board/popup/board_rule.nhn", "gradePopup", "width=550, height=560, history=no, resizable=no, scrollbars=yes, status=no, menubar=no, toolbar=no");
+		}
+		
+		if (gradePopupWin) {
+			gradePopupWin.focus();
+		}
+	}
+	
+
+
+</script>
+</head>
+<body >
+
+
+	
+	
+	
+	
+	
+		
+	
+
+<div id="wrap" class="fix">
+	<!-- GNB -->
+	
+
+
+
+
+
+<script type="text/javascript">
+function delayed_submit(object) {
+	if (navigator.userAgent.indexOf('MSIE') == -1) {
+		var b = c = new Date();
+      	while ((b.getTime() - c.getTime()) < 100) {
+			b = new Date();
+      	}
+		//window.setTimeout(function() {object.submit(); console.log('s');}, 300);
+	} 
+}
+var gnb_service = 'movie';
+var gnb_logout = 'http://movie.naver.com/movie/point/af/list.nhn';
+var gnb_template = "gnb_quirks_euckr"; /* https://ssl.pstatic.net/static.gn/templates/gnb_utf8.nhn */
+var gnb_brightness=3;
+var gnb_response = true;
+</script>
+
+
+	
+	
+
+<a name="gnb_top"></a>
+    <!-- skip navigation -->
+    <div id="u_skip">
+            <a href="#header" onclick="document.getElementById('header').tabIndex=-1;document.getElementById('header').focus();return false;"><span>메인 메뉴로 바로가기</span></a>
+            <a href="#content" id="gnb_goContent" onclick="document.getElementById('content').tabIndex=-1;document.getElementById('content').focus();return false;"><span>본문으로 바로가기</span></a>
+    </div>
+    <!-- //skip navigation -->
+	<!-- GNB -->
+	<div class="gnb_container">
+		<div class="gnb_content">
+			<div class="gnb_box">
+			 	<div class="gnb_wrap">
+					<div id="gnb" onload="javascript:getGNB();">
+				   	 	<script type="text/javascript" charset="utf-8" src="https://ssl.pstatic.net/static.gn/templates/gnb_utf8.nhn"></script>
+					</div>
+				</div>
+				<!-- 검색창 -->
+				<form id="jSearchForm" action="/movie/search/result.nhn" method="get" style="margin:0;display:none;">
+					<input type="text" name="query" maxlength="100" title="영화검색" />
+					<input type="hidden" name="section" value="all"/>
+				</form>
+				<fieldset id="jSearchArea" class="srch_area">
+					<legend><span class="blind">영화검색 영역</span></legend>
+					<div class="srch_field_on _view">
+						<span class="ipt_srch">
+							<label for="ipt_tx_srch" id="search_placeholder">영화검색</label>
+							<input type="text" id="ipt_tx_srch" class="ipt_tx_srch" name="query" maxlength="100" accesskey="s" style="ime-mode:active;" autocomplete="off" />
+							<span class="align"></span>
+							<span class="auto_tx"><a href="#" title="자동완성 펼치기"><img src="https://ssl.pstatic.net/static/movie/2012/06/srch_arrow_down.gif" width="7" height="4" title="자동완성 펼치기" alt="자동완성 펼치기" /></a></span>
+						</span>
+						<button type="submit" title="검색" class="btn_srch" onclick="clickcr(this, 'GNB.search', '', '', event); delayed_submit(this);"><span class="blind">검색</span></button>
+						 <!-- 자동 완성 영역임 #autocomplate_template-->
+					</div>
+				</fieldset>
+				<!-- //검색창 -->
+			</div>
+		</div>
+	</div>
+	<!-- //GNB -->
+	<!-- nClicks -->
+	
+		
+		
+		
+		
+			<script type="text/javascript">var nsc = "movie.comm";</script>
+			<script type="text/javascript" src="/common/js/clickcr.js"></script>
+		
+				
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	<!-- // nClicks -->	
+	<!-- //GNB -->
+	
+	<!-- LNB -->
+	
+
+
+
+	<!-- header -->
+	<div id="header">
+		<h1 class="svc_name">
+			<a href="http://www.naver.com/" title="naver로 바로가기" class="ci_logo" id="lnb_gonaver" onclick="clickcr(this, 'LNB.naver', '', '', event);"><img src="https://ssl.pstatic.net/static/movie/2013/07/logo_ci.png" width="62" height="13" alt="NAVER" /></a>
+			<a href="/" title="영화서비스홈으로 바로가기" class="svc_logo" onclick="clickcr(this, 'LNB.movie', '', '', event);"><img src="https://ssl.pstatic.net/static/movie/2012/06/logo_svc.png" width="34" height="19" alt="영화" /></a>
+		</h1>
+		<div id="scrollbar" class="scrollbar scrollbar-noscript">
+			<div class="scrollbar-box">
+				<div class="scrollbar-content">
+					<div class="in_scroll">
+						<ul class="navi">
+						<li>
+							<a href="/" title="영화홈" class="menu01" onclick="clickcr(this, 'LNB.home', '', '', event);"><strong>영화홈</strong></a>
+						</li>
+						<li>
+							<a href="/movie/running/current.nhn" title="상영작·예정작" class="menu02" onclick="clickcr(this, 'LNB.movies', '', '', event);"><strong>상영작·예정작</strong></a>
+							<ul class="navi_sub" style="display:none">
+							<li><a href="/movie/running/current.nhn" title="현재 상영영화" class="sub2_1" onclick="clickcr(this, 'LNB.now', '', '', event);"><em>현재 상영영화</em></a></li>
+							<li><a href="/movie/running/premovie.nhn" title="개봉 예정영화" class="sub2_2" onclick="clickcr(this, 'LNB.soon', '', '', event);"><em>개봉 예정영화</em></a></li>
+							<li><a href="/movie/running/weekendmovie.nhn" title="TV/DVD 영화" class="sub2_3" onclick="clickcr(this, 'LNB.guide', '', '', event);"><em>TV/DVD 영화</em></a></li>
+							<li><a href="/movie/running/movieclip.nhn" title="예고편" class="sub2_4" onclick="clickcr(this, 'LNB.tailer', '', '', event);"><em>예고편</em></a></li>
+							<!-- li><a href="/movie/preview/special.nhn" title="네이버 스페셜" class="sub1_7_on" onclick="clickcr(this, 'LNB.special', '', '', event);"><em>네이버 스페셜</em></a></li-->
+							</ul>
+						</li>
+						<li>
+							<a href="/movie/sdb/rank/rmovie.nhn" title="영화랭킹" class="menu03" onclick="clickcr(this, 'LNB.db', '', '', event);"><strong>영화랭킹</strong></a>
+							<ul class="navi_sub" style="display:none">
+							<li><a href="/movie/sdb/rank/rmovie.nhn" title="랭킹" class="sub3_1" onclick="clickcr(this, 'LNB.rank', '', '', event);"><em>랭킹</em></a></li>
+							<li><a href="/movie/sdb/browsing/bmovie_nation.nhn" title="디렉토리" class="sub3_2" onclick="clickcr(this, 'LNB.dir', '', '', event);"><em>디렉토리</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="/movie/bi/mi/reserve.nhn" title="예매" class="menu05" onclick="clickcr(this, 'LNB.ticket', '', '', event);"><strong>예매</strong></a>
+							<ul class="navi_sub" style="display:none">
+							<li><a href="http://ticket.movie.naver.com/Ticket/Reserve.aspx" title="예매하기" class="sub5_1" onclick="clickcr(this, 'LNB.buy', '', '', event);"><em>예매하기</em></a></li>
+							<li><a href="http://ticket.movie.naver.com/Order/OrderList.aspx" title="예매확인·취소" class="sub5_2" onclick="clickcr(this, 'LNB.check', '', '', event);"><em>예매확인·취소</em></a></li>
+							<li><a href="http://ticket.movie.naver.com/Coupon/Ticket.aspx" title="예매권·할인권 등록" class="sub5_3" onclick="clickcr(this, 'LNB.disticket', '', '', event);"><em>예매권·할인권 등록</em></a></li>
+							<li><a href="http://ticket.movie.naver.com/Discount/DiscountCard.aspx" title="할인카드안내·등록" class="sub5_4" onclick="clickcr(this, 'LNB.discard', '', '', event);"><em>할인카드안내·등록</em></a></li>
+							<li><a href="http://help.naver.com/ops/step2/faq.nhn?parentId=77&depth=2" title="이용안내" class="sub5_5" target="_blank" onclick="clickcr(this, 'LNB.service', '', '', event);"><em>이용안내</em></a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="/movie/point/af/list.nhn" title="평점" class="menu07_on" onclick="clickcr(this, 'LNB.comm', '', '', event);"><strong>평점</strong></a>
+                            <ul class="navi_sub" style="display:block">
+                                <li><a href="/movie/point/af/list.nhn" title="네티즌 평점" class="sub7_1_on" onclick="clickcr(this, 'LNB.rating', '', '', event);"><em>네티즌 평점</em></a></li>
+                                <li><a href="/movie/board/review/list.nhn" title="네티즌 리뷰" class="sub7_2" onclick="clickcr(this, 'LNB.review', '', '', event);"><em>네티즌 리뷰</em></a></li>
+                                
+                            </ul>
+						</li>
+						<li>
+							<a href="http://serieson.naver.com/movie/home.nhn" title="다운로드" class="menu08" onclick="clickcr(this, 'LNB.download', '', '', event);" target="_blank"><strong>다운로드</strong></a>
+						</li>
+						<li class="nav_indi">
+						        <a href="http://tv.naver.com/indiecinema" title="인디극장 UP" target="_blank"><strong>인디극장 UP</strong></a><!-- N=a:LNB.indie -->
+						</li>						
+						</ul>
+						<!-- div class="view_mode">
+							<a href="#" title="" class="normal_on"><em>1단 보기</em></a>
+							<a href="#" title="" class="wide_off"><em>2단 보기</em></a>
+						</div -->
+					</div>
+				</div>
+			</div>
+			<div class="scrollbar-v">
+				<div class="scrollbar-button-up"></div>
+				<div class="scrollbar-track">
+					<div class="scrollbar-thumb"></div>
+				</div>
+				<div class="scrollbar-button-down"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+	<!-- //LNB -->
+	
+	<div id="container">
+		<!-- content -->
+		<div id="content">
+			<div class="article">
+			
+				<div class="old_layout old_community">
+
+				
+				
+
+				<!-- Content Body -->
+				<div id="cbody" class="type_1">
+				
+					<div id="old_content">
+					<form name="delete_point_form" method="post" action="dpoint.nhn">
+		<input type="hidden" name="queryString" value="target=after&page=1"/>
+		<input type="hidden" name="target" value="after"/>
+		<input type="hidden" name="nid"/>
+	</form>
+
+	<h4 class="tlt"><img src="https://ssl.pstatic.net/static/movie/2019/09/tlt_netizen_grad_2.png" alt="네티즌 관람객 평점" width="116" height="15"></h4>
+	<div class="choice_movie_box">
+		
+		
+			
+		<!-- 영화선택 -->		
+		<div class="choice_movie">
+		<span class="fl">
+		<label for="current_movie"><img src="https://ssl.pstatic.net/static/movie/2019/09/txt_review_3.png" alt="현재 상영작 평점보기" width="105" height="14"></label><br>
+		<select id="current_movie" size="1" name="" style="width:250px;" class="select_type_1" onChange="javascript:find_list('mcode',this.options[selectedIndex].value,'after');">
+				<option>현재 상영작</option>
+				
+					<option value="194409">딥워터</option>
+				
+					<option value="194007">불량한 가족</option>
+				
+					<option value="194661">테우리</option>
+				
+					<option value="195107">모탈: 레전드 오브 토르</option>
+				
+					<option value="186235">팡파레</option>
+				
+					<option value="36651">시티 오브 갓</option>
+				
+					<option value="194771">피그테일: 피그테일과 거미 소녀 그리고 레슬링   </option>
+				
+					<option value="192066">소년시절의 너</option>
+				
+					<option value="191143">밤쉘: 세상을 바꾼 폭탄선언</option>
+				
+					<option value="191567">그레텔과 헨젤</option>
+				
+					<option value="72054">다크 나이트 라이즈</option>
+				
+					<option value="186348">너와 파도를 탈 수 있다면</option>
+				
+					<option value="79770">원 데이</option>
+				
+					<option value="189079">뮤지컬 브로드웨이 42번가</option>
+				
+					<option value="37742">트로이</option>
+				
+					<option value="173247">트랜짓</option>
+				
+					<option value="194807">아무튼, 아담</option>
+				
+					<option value="185151">욕창</option>
+				
+					<option value="194004">16세의 사운드트랙</option>
+				
+					<option value="84917">로마 위드 러브</option>
+				
+					<option value="68498">피아노의 숲</option>
+				
+					<option value="193054">시,나리오</option>
+				
+					<option value="189118">소리꾼</option>
+				
+					<option value="193326">인베이젼 2020</option>
+				
+					<option value="62586">다크 나이트</option>
+				
+					<option value="168031">해피 디 데이</option>
+				
+					<option value="183046">부력</option>
+				
+					<option value="193499">인헤리턴스</option>
+				
+					<option value="193076">벨빌 캅</option>
+				
+					<option value="189537">#살아있다</option>
+				
+					<option value="185292">인비저블 라이프</option>
+				
+					<option value="182099">에이브의 쿠킹 다이어리</option>
+				
+					<option value="188991">엔딩스 비기닝스</option>
+				
+					<option value="37439">배트맨 비긴즈</option>
+				
+					<option value="194297">1945: 포인트 오브 노 리턴</option>
+				
+					<option value="189633">야구소녀</option>
+				
+					<option value="186704">열혈형사</option>
+				
+					<option value="181099">바다로 가자</option>
+				
+					<option value="179894">사라진 시간</option>
+				
+					<option value="169647">아이 캔 온리 이매진</option>
+				
+					<option value="187351">온워드: 단 하루의 기적</option>
+				
+					<option value="194309">와일드 시티</option>
+				
+					<option value="10480">전망 좋은 방</option>
+				
+					<option value="186347">환상의 마로나</option>
+				
+					<option value="188162">백년의 기억</option>
+				
+					<option value="149434">파리 오페라 발레단</option>
+				
+					<option value="194810">레옹 디 오리지널</option>
+				
+					<option value="180378">결백</option>
+				
+					<option value="193781">나의 첫 번째 슈퍼스타</option>
+				
+					<option value="167658">에어로너츠</option>
+				
+					<option value="193136">들리나요?</option>
+				
+					<option value="183111">너는 달밤에 빛나고</option>
+				
+					<option value="182835">침입자</option>
+				
+					<option value="185380">프랑스여자</option>
+				
+					<option value="154278">카메론 포스트의 잘못된 교육</option>
+				
+					<option value="178569">국도극장</option>
+				
+					<option value="185377">좋은 여자</option>
+				
+					<option value="192623">미스비헤이비어</option>
+				
+					<option value="178520">안녕, 미누</option>
+				
+					<option value="189119">초미의 관심사</option>
+				
+					<option value="183427">조금씩, 천천히 안녕</option>
+				
+					<option value="106360">위대한 쇼맨</option>
+				
+					<option value="179394">나는보리</option>
+				
+					<option value="181114">날씨의 아이</option>
+				
+					<option value="185285">카페 벨에포크</option>
+				
+					<option value="85825">톰보이</option>
+				
+					<option value="185153">파도를 걷는 소년</option>
+				
+					<option value="190447">고양이 집사</option>
+				
+					<option value="129672">보이콰이어</option>
+				
+					<option value="185136">죽도 서핑 다이어리</option>
+				
+					<option value="74028">슈팅걸스</option>
+				
+					<option value="152691">레이니 데이 인 뉴욕</option>
+				
+					<option value="193804">프리즌 이스케이프</option>
+				
+					<option value="14448">패왕별희 디 오리지널</option>
+				
+					<option value="191633">트롤: 월드 투어</option>
+				
+					<option value="183105">고양이와 할아버지</option>
+				
+					<option value="189438">바람의 언덕</option>
+				
+					<option value="191642">킹 오브 프리즘 올 스타즈 -프리즘 쇼☆베스트10-</option>
+				
+					<option value="185150">이장</option>
+				
+					<option value="134963">라라랜드</option>
+				
+					<option value="188030">산티아고의 흰 지팡이</option>
+				
+					<option value="172181">비행</option>
+				
+					<option value="189139">리암 갤러거</option>
+				
+					<option value="189624">찬실이는 복도 많지</option>
+				
+					<option value="179414">기억의 전쟁</option>
+				
+					<option value="189001">인비저블맨</option>
+				
+					<option value="163671">집에 돌아오면, 언제나 아내가 죽은 척을 하고 있다</option>
+				
+					<option value="179181">지푸라기라도 잡고 싶은 짐승들</option>
+				
+					<option value="188765">문신을 한 신부님</option>
+				
+					<option value="186613">작은 아씨들</option>
+				
+					<option value="180851">작은 빛</option>
+				
+					<option value="185282">타오르는 여인의 초상</option>
+				
+					<option value="189463">몽마르트 파파</option>
+				
+					<option value="153934">이태원</option>
+				
+					<option value="185134">삽질</option>
+				
+					<option value="182387">윤희에게</option>
+				
+					<option value="187979">나의 노래는 멀리멀리</option>
+				
+					<option value="179095">아워 바디</option>
+				
+					<option value="179307">벌새</option>
+				
+					<option value="10323">쉘부르의 우산</option>
+				
+					<option value="31638">로슈포르의 숙녀들</option>
+				
+					<option value="176625">밤의 문이 열린다</option>
+				
+					<option value="113170">마담 프루스트의 비밀정원</option>
+				
+					<option value="173123">스파이더맨: 파 프롬 홈</option>
+				
+					<option value="18222">브레이킹 더 웨이브</option>
+				
+					<option value="179397">보희와 녹양</option>
+				
+					<option value="179506">김군</option>
+				
+					<option value="29797">어둠 속의 댄서</option>
+				
+					<option value="174830">가버나움</option>
+				
+					<option value="179694">인생 후르츠</option>
+				
+					<option value="97612">그랜드 부다페스트 호텔</option>
+				
+					<option value="168050">스타 이즈 본</option>
+				
+					<option value="172174">어느 가족</option>
+				
+					<option value="170267">너와 극장에서</option>
+				
+					<option value="162854">바르다가 사랑한 얼굴들</option>
+				
+					<option value="155263">버닝</option>
+				
+					<option value="27219">박하사탕</option>
+				
+					<option value="144806">내일</option>
+				
+					<option value="159311">소공녀</option>
+				
+					<option value="162153">B급 며느리</option>
+				
+					<option value="156912">안녕, 나의 소울메이트</option>
+				
+					<option value="164335">산상수훈</option>
+				
+					<option value="154964">파밍 보이즈</option>
+				
+					<option value="155123">미스 사이공: 25주년 특별 공연</option>
+				
+					<option value="147945">다가오는 것들</option>
+				
+					<option value="142689">최악의 하루</option>
+				
+					<option value="143564">히치콕 트뤼포</option>
+				
+					<option value="122195">서울역</option>
+				
+					<option value="50749">걸어도 걸어도</option>
+				
+					<option value="146548">태풍이 지나가고</option>
+				
+					<option value="146504">우리들</option>
+				
+					<option value="107352">자객 섭은낭</option>
+				
+					<option value="132610">바닷마을 다이어리</option>
+				
+					<option value="26348">부에나 비스타 소셜 클럽</option>
+				
+					<option value="130342">한여름의 판타지아</option>
+				
+					<option value="123389">잡식가족의 딜레마</option>
+				
+					<option value="124805">제네시스: 세상의 소금</option>
+				
+					<option value="75502">상해전기</option>
+				
+					<option value="103797">족구왕</option>
+				
+					<option value="96379">비긴 어게인</option>
+				
+					<option value="98447">님포매니악 볼륨2</option>
+				
+					<option value="98446">님포매니악 볼륨1</option>
+				
+					<option value="37544">몽상가들</option>
+				
+					<option value="95203">로렌스 애니웨이 </option>
+				
+					<option value="96997">사이비</option>
+				
+					<option value="90537">문라이즈 킹덤</option>
+				
+					<option value="97975">창</option>
+				
+					<option value="79771">피나</option>
+				
+					<option value="96326">무서운 이야기</option>
+				
+					<option value="78838">멜랑콜리아</option>
+				
+					<option value="87663">진짜로 일어날지도 몰라 기적</option>
+				
+					<option value="78872">돼지의 왕</option>
+				
+					<option value="78188">타이페이 카페 스토리</option>
+				
+					<option value="70562">시</option>
+				
+					<option value="49047">24 시티</option>
+				
+					<option value="52555">조디악</option>
+				
+					<option value="40920">만덜레이</option>
+				
+					<option value="48747">밀양</option>
+				
+					<option value="40914">돈 컴 노킹</option>
+				
+					<option value="26539">그 여름 가장 조용한 바다</option>
+				
+					<option value="37766">더 블루스 - 소울 오브 맨</option>
+				
+					<option value="27350">기쿠지로의 여름</option>
+				
+					<option value="34093">오아시스</option>
+				
+					<option value="24674">백치들</option>
+				
+					<option value="23847">스크림</option>
+				
+					<option value="19094">나는 네가 지난 여름에 한 일을 알고 있다</option>
+				
+					<option value="17771">구름 저편에</option>
+				
+					<option value="18675">이 세상 끝까지</option>
+				
+					<option value="10568">베를린 천사의 시</option>
+				
+					<option value="14397">드라큐라</option>
+				
+					<option value="11919">유로파</option>
+				
+					<option value="10489">미져리</option>
+				
+					<option value="11093">플라이</option>
+				
+					<option value="10037">에이리언</option>
+				
+					<option value="10710">파리 텍사스</option>
+				
+					<option value="10038">에이리언 2</option>
+				
+					<option value="11757">캐리</option>
+				
+					<option value="10854">새</option>
+				
+					<option value="10050">싸이코</option>
+				
+					<option value="20351">피서지에서 생긴 일</option>
+				
+					<option value="10514">태양은 가득히</option>
+				
+					<option value="10243">북북서로 진로를 돌려라</option>
+				
+					<option value="19041">오명</option>
+				
+					<option value="10452">열차 안의 낯선 자들</option>
+				
+					<option value="11089">현기증</option>
+				
+					<option value="11724">해저 2만리</option>
+				
+					<option value="10621">이창</option>
+				
+					<option value="10343">레베카</option>
+				
+
+		</select>
+		</span>
+		</div>
+		<!-- //영화선택 -->
+	</div>
+	<!-- 리스트 제목> -->
+	
+		
+		
+		
+		
+			<h5 class="sub_tlt underline"><img src="https://ssl.pstatic.net/imgmovie/2007/img/community/stlt_all_list.gif" alt="전체 리스트" width="59" height="13">
+					<div class="h5_right_txt">총 <strong class="c_88 fs_11">13037375</strong>개의 평점이 있습니다.</div>
+			</h5>
+		
+	
+	<!--// 리스트 제목> -->
+	<!-- list -->
+	<table cellspacing="0" class="list_netizen">
+		<caption class="blind">개봉 후 평점 목록으로 번호, 평점, 내용, 글쓴이, 날짜 정보를 제공</caption>
+		<colgroup><col width="44"><col width="*"><col width="68">
+		<thead>
+		<tr>
+			<th>번호</th>
+			<th>감상평</th>
+			<th class="al"><span class="th_m1">글쓴이·날짜</span></th>
+		</tr>
+		</thead>
+	<tbody>
+	
+	<tr>
+		<td class="ac num">16953264</td>
+			<td class="title">
+			
+			
+				<a href="?st=mcode&sword=186235&target=after" class="movie color_b">팡파레</a>
+			
+			
+			
+			<div class="list_netizen_score">
+				<span class="st_off"><span class="st_on" style="width:80%">별점 - 총 10점 중</span></span><em>8</em>
+			</div>
+			<br>용감한 장르의 변주! 마지막 시원한 한방까지!! 
+			
+			
+			
+				
+				
+				
+				<a href="javascript:report('youn****', 'fJPf+EyszEEKfmN0c9/wIem0GbGrcP6wapA6kskxHb0=', '용감한 장르의 변주! 마지막 시원한 한방까지!! ', '16953264', 'point_after');" class="report" style="color:#8F8F8F" title="새 창">신고</a>
+			
+			
+			</td>
+		<td class="num"><a href="javascript:find_list('nickname','16953264', 'after');" class="author">youn****</a><br>20.07.09</td>
+	</tr>
+	
+	<tr>
+		<td class="ac num">16953263</td>
+			<td class="title">
+			
+			
+				<a href="?st=mcode&sword=192623&target=after" class="movie color_b">미스비헤이비어</a>
+			
+			
+			
+			<div class="list_netizen_score">
+				<span class="st_off"><span class="st_on" style="width:10%">별점 - 총 10점 중</span></span><em>1</em>
+			</div>
+			<br>에효... 
+			
+			
+			
+				
+				
+				
+				<a href="javascript:report('flfl****', 'cvdbdYHw1TgxyyJVc0LiWCF8+sXmmTQXEc5mEFdFNt4=', '에효...', '16953263', 'point_after');" class="report" style="color:#8F8F8F" title="새 창">신고</a>
+			
+			
+			</td>
+		<td class="num"><a href="javascript:find_list('nickname','16953263', 'after');" class="author">flfl****</a><br>20.07.09</td>
+	</tr>
+	
+	<tr>
+		<td class="ac num">16953262</td>
+			<td class="title">
+			
+			
+				<a href="?st=mcode&sword=189537&target=after" class="movie color_b">#살아있다</a>
+			
+			
+			
+			<div class="list_netizen_score">
+				<span class="st_off"><span class="st_on" style="width:20%">별점 - 총 10점 중</span></span><em>2</em>
+			</div>
+			<br>죽고싶다... 증말로 하.... 
+			
+			
+			
+				
+				
+				
+				<a href="javascript:report('noni****', 'WwU+vU8owqhDA8PvvZ9NAs8vBtYdIBO6eqqTJro38MM=', '죽고싶다... 증말로 하....', '16953262', 'point_after');" class="report" style="color:#8F8F8F" title="새 창">신고</a>
+			
+			
+			</td>
+		<td class="num"><a href="javascript:find_list('nickname','16953262', 'after');" class="author">noni****</a><br>20.07.09</td>
+	</tr>
+	
+	<tr>
+		<td class="ac num">16953261</td>
+			<td class="title">
+			
+			
+				<a href="?st=mcode&sword=169347&target=after" class="movie color_b">챔피언</a>
+			
+			
+			
+			<div class="list_netizen_score">
+				<span class="st_off"><span class="st_on" style="width:40%">별점 - 총 10점 중</span></span><em>4</em>
+			</div>
+			<br>배우들 연기는 좋지만 스토리가 좀ㅎㅎ... 남는건 청국장 먹방씬뿐이야 
+			
+			
+			
+				
+				
+				
+				<a href="javascript:report('ghdr****', 'X6BDGc2/Q7y1KDdzjtouav2Ns3Kn1hPPFC5/47oM4V4=', '배우들 연기는 좋지만 스토리가 좀ㅎㅎ... 남는건 청국장 먹방씬뿐이야', '16953261', 'point_after');" class="report" style="color:#8F8F8F" title="새 창">신고</a>
+			
+			
+			</td>
+		<td class="num"><a href="javascript:find_list('nickname','16953261', 'after');" class="author">ghdr****</a><br>20.07.09</td>
+	</tr>
+	
+	<tr>
+		<td class="ac num">16953260</td>
+			<td class="title">
+			
+			
+				<a href="?st=mcode&sword=171725&target=after" class="movie color_b">스파이더맨: 뉴 유니버스</a>
+			
+			
+			
+			<div class="list_netizen_score">
+				<span class="st_off"><span class="st_on" style="width:100%">별점 - 총 10점 중</span></span><em>10</em>
+			</div>
+			<br>연출이 특이하고 재밌음 
+			
+			
+			
+				
+				
+				
+				<a href="javascript:report('tlfn****', 'ZkRpanSXec5biJpDeTEz/KxL1BI3AsbyHXNHLp5e0LI=', '연출이 특이하고 재밌음', '16953260', 'point_after');" class="report" style="color:#8F8F8F" title="새 창">신고</a>
+			
+			
+			</td>
+		<td class="num"><a href="javascript:find_list('nickname','16953260', 'after');" class="author">tlfn****</a><br>20.07.09</td>
+	</tr>
+	
+	<tr>
+		<td class="ac num">16953259</td>
+			<td class="title">
+			
+			
+				<a href="?st=mcode&sword=106335&target=after" class="movie color_b">언어의 정원</a>
+			
+			
+			
+			<div class="list_netizen_score">
+				<span class="st_off"><span class="st_on" style="width:20%">별점 - 총 10점 중</span></span><em>2</em>
+			</div>
+			<br>정말 영상 빼면 남는게 없다...일본과 문화가 달라 정서 차이인가 싶다가도 뭐 하자는건지 
+			
+			
+			
+				
+				
+				
+				<a href="javascript:report('babo****', 'yuEe0gc1eGk56++q37GQ7OJJ2eFLVtMKQyAIvt2ZsLw=', '정말 영상 빼면 남는게 없다...일본과 문화가 달라 정서 차이인가 싶다가도 뭐 하자는건지 ', '16953259', 'point_after');" class="report" style="color:#8F8F8F" title="새 창">신고</a>
+			
+			
+			</td>
+		<td class="num"><a href="javascript:find_list('nickname','16953259', 'after');" class="author">babo****</a><br>20.07.09</td>
+	</tr>
+	
+	<tr>
+		<td class="ac num">16953258</td>
+			<td class="title">
+			
+			
+				<a href="?st=mcode&sword=176306&target=after" class="movie color_b">남산의 부장들</a>
+			
+			
+			
+			<div class="list_netizen_score">
+				<span class="st_off"><span class="st_on" style="width:90%">별점 - 총 10점 중</span></span><em>9</em>
+			</div>
+			<br> 
+			
+			
+			
+				
+				
+				
+				<a href="javascript:report('ponc****', 'JXF6V3g6eoMl8EiUa0BjWydtMmcFRJj7WvJIgaH//4U=', '', '16953258', 'point_after');" class="report" style="color:#8F8F8F" title="새 창">신고</a>
+			
+			
+			</td>
+		<td class="num"><a href="javascript:find_list('nickname','16953258', 'after');" class="author">ponc****</a><br>20.07.09</td>
+	</tr>
+	
+	<tr>
+		<td class="ac num">16953257</td>
+			<td class="title">
+			
+			
+				<a href="?st=mcode&sword=31606&target=after" class="movie color_b">킬러들의 수다</a>
+			
+			
+			
+			<div class="list_netizen_score">
+				<span class="st_off"><span class="st_on" style="width:100%">별점 - 총 10점 중</span></span><em>10</em>
+			</div>
+			<br>이분 장진감독 아니고 장탐정임!! 
+			
+			
+			
+				
+				
+				
+				<a href="javascript:report('andr****', '8cRMtCbX8hzk3G2UfUZT4M07iZV06J96Le25d/OkGBE=', '이분 장진감독 아니고 장탐정임!!', '16953257', 'point_after');" class="report" style="color:#8F8F8F" title="새 창">신고</a>
+			
+			
+			</td>
+		<td class="num"><a href="javascript:find_list('nickname','16953257', 'after');" class="author">andr****</a><br>20.07.09</td>
+	</tr>
+	
+	<tr>
+		<td class="ac num">16953256</td>
+			<td class="title">
+			
+			
+				<a href="?st=mcode&sword=174903&target=after" class="movie color_b">엑시트</a>
+			
+			
+			
+			<div class="list_netizen_score">
+				<span class="st_off"><span class="st_on" style="width:10%">별점 - 총 10점 중</span></span><em>1</em>
+			</div>
+			<br>8.99 에라이!!!! 연기력이 뛰어난건 모르겠고 주연은 그냥저냥인데, 중간중간 잠깐씩 나오는 조연들 연기가 연기자가 아니라 일반인들 밖에서 방송카메라 들이대면 보는 딱 그정도....;;; 솔직히 그냥 시간떼우기용으로 보기로도 아까운 별점 
+			
+			
+			
+				
+				
+				
+				<a href="javascript:report('bkh2****', 'oli7R8o2h26pP3YnqmMioknTtvm7kBPuHvsv4XcwUxw=', '8.99 에라이!!!! 연기력이 뛰어난건 모르겠고 주연은 그냥저냥인데, 중간중간 잠깐씩 나오는 조연들 연기가 연기자가 아니라 일반인들 밖에서 방송카메라 들이대면 보는 딱 그정도....;;; 솔직히 그냥 시간떼우기용으로 보기로도 아까운 별점', '16953256', 'point_after');" class="report" style="color:#8F8F8F" title="새 창">신고</a>
+			
+			
+			</td>
+		<td class="num"><a href="javascript:find_list('nickname','16953256', 'after');" class="author">bkh2****</a><br>20.07.09</td>
+	</tr>
+	
+	<tr>
+		<td class="ac num">16953255</td>
+			<td class="title">
+			
+			
+				<a href="?st=mcode&sword=171725&target=after" class="movie color_b">스파이더맨: 뉴 유니버스</a>
+			
+			
+			
+			<div class="list_netizen_score">
+				<span class="st_off"><span class="st_on" style="width:100%">별점 - 총 10점 중</span></span><em>10</em>
+			</div>
+			<br>모든걸 다 잡은 애니메이션 영화. 최고. 
+			
+			
+			
+				
+				
+				
+				<a href="javascript:report('love****', 'dA2RfoRTuetm7JvQmDwuT2EtbNY4/ZFYY0UD72OkI0o=', '모든걸 다 잡은 애니메이션 영화. 최고.', '16953255', 'point_after');" class="report" style="color:#8F8F8F" title="새 창">신고</a>
+			
+			
+			</td>
+		<td class="num"><a href="javascript:find_list('nickname','16953255', 'after');" class="author">love****</a><br>20.07.09</td>
+	</tr>
+	
+	
+	</tbody>
+	</table>
+	<form id="reportForm" name="reportForm1"></form>
+	<script type="text/javascript">
+	function report(writerId, encryptedId, title, nid, boardId){
+		if( 'Y' == 'N' || 'Y' == 'G' ) {
+			openNotify('Y', '');
+			return;
+		}
+		if(login_check()== false) {
+			return;
+		}
+			
+			url = location.protocol+ "//" + location.host + "/movie/board/common/report.nhn";
+			if("" == ""){
+				goLogin();
+			}else{
+				var reportForm = document.getElementById("reportForm");
+				var formInput1 = createReportHiddenParameter("writerId", writerId);
+				var formInput2 = createReportHiddenParameter("nid", nid);
+				var formInput3 = createReportHiddenParameter("boardId", boardId);
+				var formInput4 = createReportHiddenParameter("title", title);
+				var formInput5 = createReportHiddenParameter("encryptedId", encryptedId);
+
+				reportForm.appendChild(formInput1);
+				reportForm.appendChild(formInput2);
+				reportForm.appendChild(formInput3);
+				reportForm.appendChild(formInput4);
+				reportForm.appendChild(formInput5);
+				
+				window.open("", "report", "status=yes, width=650, height=550, resizable=yes");
+				reportForm.action = url;
+				reportForm.target="report";
+				reportForm.submit();
+
+				reportForm.removeChild(formInput1);
+				reportForm.removeChild(formInput2);
+				reportForm.removeChild(formInput3);
+				reportForm.removeChild(formInput4);	
+				reportForm.removeChild(formInput5);	
+			}
+	}
+	function createReportHiddenParameter(name, value){
+		var input = document.createElement("input");
+		input.type="hidden";
+		input.name = name;
+		input.value = value;
+		return input;
+	}
+	</script>
+	<!-- //list -->
+	<!-- 페이징 -->
+	<div class="paging">
+		<div>
+		
+			
+			<a href="/movie/point/af/list.nhn?&page=1"><span class="on">1</span></a>
+<a href="/movie/point/af/list.nhn?&page=2"><span>2</span></a>
+<a href="/movie/point/af/list.nhn?&page=3"><span>3</span></a>
+<a href="/movie/point/af/list.nhn?&page=4"><span>4</span></a>
+<a href="/movie/point/af/list.nhn?&page=5"><span>5</span></a>
+<a href="/movie/point/af/list.nhn?&page=6"><span>6</span></a>
+<a href="/movie/point/af/list.nhn?&page=7"><span>7</span></a>
+<a href="/movie/point/af/list.nhn?&page=8"><span>8</span></a>
+<a href="/movie/point/af/list.nhn?&page=9"><span>9</span></a>
+<a href="/movie/point/af/list.nhn?&page=10"><span>10</span></a>
+
+			<a href="/movie/point/af/list.nhn?&page=2" title='다음' class='pg_next'><em>다음</em></a>
+
+		
+		</div>
+	</div>
+	<!-- //페이징 -->
+	<!-- 검색 -->
+	<fieldset class="form_board_search pt_18">
+	<legend>게시물 검색</legend>
+		<form name="searchListForm" action="list.nhn" method="get" onSubmit="doSearchList(); return false;">
+			<select size="1" name="st" style="width:75px;" class="select_type_1" onchange="checkSearchType(); return false;" title="게시물 검색">
+				<option value="userid">글쓴이</option>
+				<option value="movie">관련영화</option>
+			</select>
+			<input type="hidden" name="target" value="after"/>
+			<input type="hidden" name="mcode" value=""/>
+			<input name="sword" type="text" style="width:145px" title="검색어입력" class="input_type_text_4" onfocus="openMovieSearchPopupOrNot(); return false;">
+			<input type="image" src="https://ssl.pstatic.net/imgmovie/2007/img/common/btn_search.gif" alt="검색">
+		</form>
+	</fieldset>
+	<!-- //검색 -->
+	<script type="text/javascript">
+	
+		var oForm = document.searchListForm;
+		
+		function checkSearchType() {
+			var searchType = oForm.st.value;
+			
+			if (searchType == "movie") {
+				oForm.sword.readOnly = true;
+			} else {
+				oForm.sword.readOnly = false;
+			}
+		}
+		
+		function openMovieSearchPopupOrNot() {
+			var searchType = oForm.st.value;
+			
+			if (searchType == "movie") {
+				oForm.st.focus();
+				window.open("/movie/bi/pop/movie_sel.nhn", "select_movie", "scrollbars=yes, status=no, toolbar=no, width=530, height=470");
+			}
+			
+			return false;
+		}
+		
+		function doSearchList() {
+			var searchType = oForm.st.value;
+			
+			if(oForm.sword.value.length < 1) {
+				alert("검색어를 입력해 주세요.");
+				return false;
+			}
+			
+			if (searchType == "movie") {
+				var st = "mcode";
+				var sword = oForm.mcode.value;
+				
+				oForm.st.value = st;
+				oForm.sword.value = sword;
+				find_list(st, sword, "");
+				
+				return false;
+			}
+			
+			oForm.sword.value = oForm.sword.value.replace(/\'/g,"\\'");
+			oForm.submit();
+			return true;
+		}
+		
+		// 영화 검색 팝업 창에서 콜백 하는, 영화 정보 세팅 함수
+		function setMovieInfo (mcode, mtitle) {
+			oForm.mcode.value = mcode;
+			oForm.sword.value = mtitle;
+		}
+		
+	</script>
+	
+	<!-- 안내박스 -->
+	<ul class="box_guide mt_35">
+		<li>
+			<dl class="info_guide">
+				<dt class="blind">유의사항</dt>
+				<dd>평점은 영화별로 1개의 아이디당 한 번만 등록이 가능하며 하루에 최대 3개의 영화까지만 등록이 가능합니다.
+					게시판 용도에 맞지 않는 글은 운영자에 의해 삭제될 수 있습니다. <span class="rule"><a href="javascript:openRulePopup();"></a></span></dd>
+			</dl>
+		</li>
+	</ul>
+	<!-- //안내박스 -->
+	<!-- 탑버튼 -->
+	<div class="go_top">
+	
+	<a href="#gnb_top"><img src="https://ssl.pstatic.net/imgmovie/2007/img/common/btn_top.gif" alt="TOP" width="30" height="11"></a>
+	</div>
+	<!-- //탑버튼 -->
+					</div>
+			
+					<div id="assistant">
+						
+
+
+
+
+
+
+
+	
+		
+
+
+
+
+
+<!-- 우측 메뉴 -->
+
+	 
+
+
+
+	<!-- 영화 인기검색어 -->
+	<div class="box_type_1 mb_8">
+	<h3><img src="https://ssl.pstatic.net/imgmovie/2007/img/super_db/tlt_r_best_movie.gif" alt="영화 인기검색어" width="75" height="11"></h3>
+		<ul class="r_ranking">
+			
+			
+				
+				
+				
+				
+				
+				<li class="ranking01">
+				
+				
+				<a href="/movie/bi/mi/basic.nhn?code=189537" onclick="clickcr(this,'pop.list','189537','1',event);" class='b' title="#살아있다"><span class="blind">1위</span>#살아있다</a>
+				<span class="rank">
+				
+				
+				
+				
+					
+				
+				
+				
+					
+					
+					
+					
+				
+				<img src="https://ssl.pstatic.net/imgmovie/2007/img/common/icon_na_1.gif"
+					 alt="순위 변동 없음"
+					 width="7" height="10">0</span>
+				
+			
+				
+				
+				
+				
+				<li class="ranking02">
+				
+				
+				<a href="/movie/bi/mi/basic.nhn?code=180378" onclick="clickcr(this,'pop.list','180378','2',event);"  title="결백"><span class="blind">2위</span>결백</a>
+				<span class="rank">
+				
+				
+				
+				
+					
+				
+				
+				
+					
+					
+					
+					
+				
+				<img src="https://ssl.pstatic.net/imgmovie/2007/img/common/icon_na_1.gif"
+					 alt="순위 변동 없음"
+					 width="7" height="10">0</span>
+				
+			
+				
+				
+				
+				
+				<li class="ranking03">
+				
+				
+				<a href="/movie/bi/mi/basic.nhn?code=189118" onclick="clickcr(this,'pop.list','189118','3',event);"  title="소리꾼"><span class="blind">3위</span>소리꾼</a>
+				<span class="rank">
+				
+				
+				
+				
+					
+				
+				
+				
+					
+					
+					
+					
+				
+				<img src="https://ssl.pstatic.net/imgmovie/2007/img/common/icon_na_1.gif"
+					 alt="순위 변동 없음"
+					 width="7" height="10">0</span>
+				
+			
+				
+				
+				
+				
+				<li class="ranking04">
+				
+				
+				<a href="/movie/bi/mi/basic.nhn?code=185917" onclick="clickcr(this,'pop.list','185917','4',event);"  title="반도"><span class="blind">4위</span>반도</a>
+				<span class="rank">
+				
+				
+				
+				
+				
+					
+				
+				
+					
+					
+					
+					
+				
+				<img src="https://ssl.pstatic.net/imgmovie/2007/img/common/icon_up_1.gif"
+					 alt="순위 상승"
+					 width="7" height="10">2</span>
+				
+			
+				
+				
+				
+				
+				<li class="ranking05">
+				
+				
+				<a href="/movie/bi/mi/basic.nhn?code=193326" onclick="clickcr(this,'pop.list','193326','5',event);"  title="인베이젼 2020"><span class="blind">5위</span>인베이젼 2020</a>
+				<span class="rank">
+				
+				
+				
+				
+				
+					
+				
+				
+					
+					
+					
+					
+				
+				<img src="https://ssl.pstatic.net/imgmovie/2007/img/common/icon_down_1.gif"
+					 alt="순위 하락"
+					 width="7" height="10">1</span>
+				
+			
+		</ul>
+        <!--[D] 더보기 위치 이동 -->
+        <a href="/movie/sdb/rank/rmovie.nhn" onclick="clickcr(this,'pop.more','','',event);" class="more">더보기</a>
+        <p class="term">2020.07.08</p>
+	</div>
+  
+
+	 
+
+
+
+	<script type="text/javascript">
+		//탭 토글해주는 스크립트
+		function showTopPoint(param){			
+			if(param =="running"){
+				document.getElementById("topRunning").style.display="";
+				document.getElementById("topAll").style.display="none";
+                document.getElementById("running_tab").focus();
+				
+			}else{
+				document.getElementById("topRunning").style.display="none";
+				document.getElementById("topAll").style.display="";
+                document.getElementById("all_tab_in_all").focus();
+			}
+		}
+	</script>
+	<!-- 네티즌 최고 평점 -->
+	<div id="topRunning" class="box_type_1 mb_8">
+		<h3><img src="https://ssl.pstatic.net/imgmovie/2007/img/community/tlt_r_netizen_good.gif" alt="네티즌 최고 평점" width="77" height="12"></h3>
+		<div style="_margin-top:-1px;"><a id="running_tab" href="javascript:showTopPoint('running');" onclick="clickcr(this,'npt.now','','',event);"><img src="https://ssl.pstatic.net/imgmovie/2007/img/community/tab_r_01_on.gif" alt="현재 상영영화" width="99" height="33"></a><a id="all_tab" href="javascript:showTopPoint('all');" onclick="clickcr(this,'npt.all','','',event);"><img src="https://ssl.pstatic.net/imgmovie/2007/img/community/tab_r_02_off.gif" alt="모든영화" width="99" height="33"></a></div>
+		<!--[D] 선택 된 탭 대체 텍스트 제공 -->
+		<strong class="blind">현재 상영영화</strong>
+		<ul class="grade">
+			
+				<li class="1st ranking01">
+					<span class="blind">1위</span>
+					
+						<a href="/movie/point/af/list.nhn?st=mcode&sword=174830" onclick="clickcr(this,'npt*n.list','174830','1',event);" class="ls b" title="가버나움">
+						가버나움</a><span class="num b check">9.59</span>
+					
+					
+					
+						<p class="img_movie"><a href="/movie/point/af/list.nhn?st=mcode&sword=174830" onclick="clickcr(this,'npt*n.img','174830','',event);">
+						
+							<img src="https://ssl.pstatic.net/imgmovie/mdi/mi_new_master/1748/174830_M48_174925.jpg" alt="가버나움" width="176" height="80">
+						
+						
+						</a>
+						</p>
+												
+				</li>
+			
+				<li class="1st ranking02">
+					<span class="blind">2위</span>
+					
+					
+						<a href="/movie/point/af/list.nhn?st=mcode&sword=106360" onclick="clickcr(this,'npt*n.list','106360','2',event);" class="ls" title="위대한 쇼맨">
+						위대한 쇼맨</a><span class="num b">9.4</span>
+					
+												
+				</li>
+			
+				<li class="1st ranking03">
+					<span class="blind">3위</span>
+					
+					
+						<a href="/movie/point/af/list.nhn?st=mcode&sword=10038" onclick="clickcr(this,'npt*n.list','10038','3',event);" class="ls" title="에이리언 2">
+						에이리언 2</a><span class="num b">9.34</span>
+					
+												
+				</li>
+			
+				<li class="1st ranking04">
+					<span class="blind">4위</span>
+					
+					
+						<a href="/movie/point/af/list.nhn?st=mcode&sword=62586" onclick="clickcr(this,'npt*n.list','62586','4',event);" class="ls" title="다크 나이트">
+						다크 나이트</a><span class="num b">9.34</span>
+					
+												
+				</li>
+			
+				<li class="1st ranking05">
+					<span class="blind">5위</span>
+					
+					
+						<a href="/movie/point/af/list.nhn?st=mcode&sword=14448" onclick="clickcr(this,'npt*n.list','14448','5',event);" class="ls" title="패왕별희 디 오리지널">
+						패왕별희 디 오리지널</a><span class="num b">9.31</span>
+					
+												
+				</li>
+								
+		</ul>
+		<a href="/movie/sdb/rank/rmovie.nhn?sel=cur" onclick="clickcr(this,'npt.more','','',event);" class="more">더보기</a><!-- 현재 상영영화의 더보기 -->
+		<p class="term" style="padding:0 13px 7px 0;">2020.07.08<img src="https://ssl.pstatic.net/imgmovie/2007/img/community/txt_righ_point.gif" alt="까지의 관람후 누적 평점" width="88" height="9"></p>
+	</div>
+	<div id="topAll" class="box_type_1 mb_8" style="display:none;">
+		<h3><img src="https://ssl.pstatic.net/imgmovie/2007/img/community/tlt_r_netizen_good.gif" alt="네티즌 최고 평점" width="77" height="12"></h3>
+		<strong class="blind">모든 영화</strong>
+		<div style="_margin-top:-1px;"><a href="javascript:showTopPoint('running');" onclick="clickcr(this,'npt.now','','',event);"><img src="https://ssl.pstatic.net/imgmovie/2007/img/community/tab_r_01_off.gif" alt="현재 상영영화" width="99" height="33"></a><a id="all_tab_in_all" href="javascript:showTopPoint('all');" onclick="clickcr(this,'npt.all','','',event);"><img src="https://ssl.pstatic.net/imgmovie/2007/img/community/tab_r_02_on.gif" alt="모든영화" width="99" height="33"></a></div>
+		<ul class="grade">
+			
+				<li class="1st ranking01">
+					<span class="blind">1위</span>
+					
+						<a href="/movie/point/af/list.nhn?st=mcode&sword=171539" onclick="clickcr(this,'npt*a.list','171539','1',event);" class="ls b" title="그린 북">
+						그린 북
+						</a><span class="num b check">9.59</span>
+					
+					
+					
+					<p class="img_movie"><a href="/movie/point/af/list.nhn?st=mcode&sword=171539" onclick="clickcr(this,'npt*a.img','171539','',event);">
+					
+							<img src="https://ssl.pstatic.net/imgmovie/mdi/mi_new_master/1715/171539_M26_145006.jpg" alt="그린 북" width="176" height="80">
+						
+						
+					</a></p>
+												
+				</li>
+			
+				<li class="1st ranking02">
+					<span class="blind">2위</span>
+					
+					
+						<a href="/movie/point/af/list.nhn?st=mcode&sword=174830" onclick="clickcr(this,'npt*a.list','174830','2',event);" class="ls" title="가버나움">
+						가버나움</a><span class="num b">9.59</span>
+					
+												
+				</li>
+			
+				<li class="1st ranking03">
+					<span class="blind">3위</span>
+					
+					
+						<a href="/movie/point/af/list.nhn?st=mcode&sword=144906" onclick="clickcr(this,'npt*a.list','144906','3',event);" class="ls" title="베일리 어게인">
+						베일리 어게인</a><span class="num b">9.53</span>
+					
+												
+				</li>
+			
+				<li class="1st ranking04">
+					<span class="blind">4위</span>
+					
+					
+						<a href="/movie/point/af/list.nhn?st=mcode&sword=151196" onclick="clickcr(this,'npt*a.list','151196','4',event);" class="ls" title="원더">
+						원더</a><span class="num b">9.49</span>
+					
+												
+				</li>
+			
+				<li class="1st ranking05">
+					<span class="blind">5위</span>
+					
+					
+						<a href="/movie/point/af/list.nhn?st=mcode&sword=181710" onclick="clickcr(this,'npt*a.list','181710','5',event);" class="ls" title="포드 V 페라리">
+						포드 V 페라리</a><span class="num b">9.49</span>
+					
+												
+				</li>
+								
+		</ul>
+		<a href="/movie/sdb/rank/rmovie.nhn?sel=pnt" onclick="clickcr(this,'npt.more','','',event);" class="more">더보기</a><!-- 모든영화의 더보기 -->
+		<p class="term" style="padding:0 13px 7px 0;">2020.07.08<img src="https://ssl.pstatic.net/imgmovie/2007/img/community/txt_righ_point.gif" alt="까지의 관람후 누적 평점" width="88" height="9"></p>
+	</div>
+	<!-- //네티즌 최고 평점 -->
+  
+
+	 
+
+
+
+<!-- 가장 많이 추천된 리뷰 -->
+<div class="box_type_1 mb_8">
+	<h3><img src="https://ssl.pstatic.net/imgmovie/2007/img/community/tlt_r_best_review_reco.gif" alt="가장 많이 추천된 리뷰" width="103" height="12"></h3>
+	<dl class="ranking_data">
+		
+			<dt class="ranking01">
+				<span class="blind">1위</span>
+				
+					<a href="/movie/board/review/read.nhn?nid=4751990" onclick="clickcr(this,'rcr.title','4751990','1',event);" class="b" title="스포와 해석이 필요한 영화 사라진 시간, 이해하려고 하면 머리 아픈, 포스트모던한 영화, 마음 아픈 사람들을 이해하기 위한, 마음 아픈 사람들의 이야기, 조진웅 배수빈 정해균 차수">스포와 해석이 필요한 영화 ..</a>
+				
+				
+				
+			</dt>
+			<dd>
+				
+					<a href="/movie/bi/mi/basic.nhn?code=179894" onclick="clickcr(this,'rcr.movie','179894','1',event);" class="check" title="사라진 시간">사라진 시간</a><a href="/movie/board/review/list.nhn?st=nickname&sword=4751990" onclick="clickcr(this,'rcr.id','pjwong','1',event);" class="nick check">pjwo****</a>
+				
+				
+			</dd>
+		
+			<dt class="ranking02">
+				<span class="blind">2위</span>
+				
+				
+					<a href="/movie/board/review/read.nhn?nid=4751900" onclick="clickcr(this,'rcr.title','4751900','2',event);" title="포스트 좀비물을 꿈꾸었지만 &lt;#살아있다&gt;">포스트 좀비물을 꿈꾸었지만..</a>
+				
+				
+			</dt>
+			<dd>
+				
+				
+					<a href="/movie/bi/mi/basic.nhn?code=189537" onclick="clickcr(this,'rcr.movie','189537','2',event);" title="#살아있다">#살아있다</a> <a href="/movie/board/review/list.nhn?st=nickname&sword=4751900" onclick="clickcr(this,'rcr.id','wowldh','2',event);" class="nick">wowl****</a>
+				
+			</dd>
+		
+			<dt class="ranking03">
+				<span class="blind">3위</span>
+				
+				
+					<a href="/movie/board/review/read.nhn?nid=4752129" onclick="clickcr(this,'rcr.title','4752129','3',event);" title="죽은자들과의 만남 &quot;츠나구(Tsunagu, 2012)&quot;">죽은자들과의 만남 &quot;츠..</a>
+				
+				
+			</dt>
+			<dd>
+				
+				
+					<a href="/movie/bi/mi/basic.nhn?code=100020" onclick="clickcr(this,'rcr.movie','100020','3',event);" title="츠나구">츠나구</a> <a href="/movie/board/review/list.nhn?st=nickname&sword=4752129" onclick="clickcr(this,'rcr.id','gkdid124','3',event);" class="nick">gkdi****</a>
+				
+			</dd>
+		
+			<dt class="ranking04">
+				<span class="blind">4위</span>
+				
+				
+					<a href="/movie/board/review/read.nhn?nid=4752256" onclick="clickcr(this,'rcr.title','4752256','4',event);" title="전혀혐오스럽지않은 마츠코의 &quot;혐오스런 마츠코의 일생(嫌われ まつこ の 一生 :Memories of Matsuko, 2006)&quot;">전혀혐오스럽지않은 마츠코..</a>
+				
+				
+			</dt>
+			<dd>
+				
+				
+					<a href="/movie/bi/mi/basic.nhn?code=58333" onclick="clickcr(this,'rcr.movie','58333','4',event);" title="혐오스런 마츠코의 일생">혐오스런 마츠..</a> <a href="/movie/board/review/list.nhn?st=nickname&sword=4752256" onclick="clickcr(this,'rcr.id','gkdid124','4',event);" class="nick">gkdi****</a>
+				
+			</dd>
+		
+			<dt class="ranking05">
+				<span class="blind">5위</span>
+				
+				
+					<a href="/movie/board/review/read.nhn?nid=4752135" onclick="clickcr(this,'rcr.title','4752135','5',event);" title="아픈사랑을 꿈구는.... &quot;조제, 호랑이 그리고 물고기들 (2003)&quot;">아픈사랑을 꿈구는.... &quo..</a>
+				
+				
+			</dt>
+			<dd>
+				
+				
+					<a href="/movie/bi/mi/basic.nhn?code=38464" onclick="clickcr(this,'rcr.movie','38464','5',event);" title="조제, 호랑이 그리고 물고기들">조제, 호랑이 ..</a> <a href="/movie/board/review/list.nhn?st=nickname&sword=4752135" onclick="clickcr(this,'rcr.id','gkdid124','5',event);" class="nick">gkdi****</a>
+				
+			</dd>
+		
+	</dl>
+	<p class="term" style="padding:0 13px 7px 0;">2020.07.01-2020.07.08</p>
+</div>
+<!-- //가장 많이 추천된 리뷰 -->
+  
+
+
+	
+	
+	
+	
+	
+		
+	
+	
+		
+	
+
+
+					</div>
+					<img src="https://ssl.pstatic.net/imgmovie/2007/img/common/blank.gif" alt="" class="clear">
+				</div>
+				<!-- //Content Body -->
+
+				</div>
+			</div>
+		</div>
+		<!-- //content -->
+	</div>
+	<!-- //container -->
+
+	<!-- Footer -->
+	<script type="text/javascript" src="/common/js/jindo/component/1.0.2/jindo.Component.js"></script>
+	<script type="text/javascript" src="/common/js/jindo/component/1.0.2/jindo.UIComponent.js"></script>
+	
+
+
+
+
+
+<!-- footer -->
+<div id="footer">
+	<div class="in_footer">
+		<div class="foot_con">
+				<ul>
+					<li class="first"><a href="http://www.naver.com/rules/service.html" target="_blank" onclick="clickcr(this, 'fot.agreement', '', '', event);">이용약관</a></li>
+					<li><a href="http://www.naver.com/rules/privacy.html" target="_blank"  onclick="clickcr(this, 'fot.privacy', '', '', event);"><strong>개인정보처리방침</strong></a></li>
+					<li><a href="http://www.naver.com/rules/disclaimer.html" target="_blank" onclick="clickcr(this, 'fot.disclaimer', '', '', event);">책임의 한계와 법적고지</a></li>
+					<li><a href="https://help.naver.com/support/service/main.nhn?serviceNo=800" target="_blank" onclick="clickcr(this, 'fot.help', '', '', event);">영화 고객센터</a></li>
+				</ul>
+				<p class="info">본 콘텐츠의 저작권은 저작권자 또는 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다.</p>
+				<p class="info">
+					사업자등록번호 : 220-81-62517<span>통신판매업 신고번호</span> : 경기성남 제 2006 - 692호<span>대표이사 : 한성숙</span><span><a href="http://www.ftc.go.kr/info/bizinfo/communicationList.jsp" onclick="clickcr(this, 'fot.bizinfo', '', '', event);">사업자등록정보 확인</a></span><br>
+					주소 : 경기도 성남시 분당구 불정로 6 네이버 그린팩토리 <span>대표전화 : 1588-3820</span>
+				</p> 
+				<address>
+					<a href="http://www.navercorp.com" target="_blank" class="logo" onclick="clickcr(this, 'fot.nhn', '', '', event);"><img src="https://ssl.pstatic.net/static/movie/2013/07/logo_naver.png" width="63" height="11" alt="NAVER"></a>
+					<em>Copyright &copy;</em>
+					<a href="http://www.navercorp.com" target="_blank" onclick="clickcr(this, 'fot.corp', '', '', event);">NAVER Corp.</a>
+					<span>All Rights Reserved.</span>
+				</address>
+		</div>
+	</div>
+</div>
+<!-- //footer -->
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+if (false) {
+	var alertType = "NONE";
+	var koreanTitle = "";
+	var movieCode = "0";
+	var userReserveCount = "0";
+	var todayDatetime = "20200709131349";
+	var endDatetimeAfterTwoDays = "00000000000000";
+	
+	
+	if (movieCode > 0) {
+		openWriteActualPointAlert (alertType, koreanTitle, movieCode, userReserveCount, todayDatetime, endDatetimeAfterTwoDays);
+	}
+}
+
+function openWriteActualPointAlert (alertType, koreanTitle, movieCode, count, today, endDate) {
+	if (alertType == "ONE") {
+		setCookieLastUserReserveDate(today, endDate);
+		if (confirm("관람하신 " + koreanTitle + "에\n평점 등록 시 네이버페이 마일리지 500원 적립!\n지금 평점쓰기 메뉴로 이동하시겠습니까?")) {
+			top.location.href = "http://movie.naver.com/movie/bi/mi/point.nhn?code=" + movieCode;
+		}
+	} else if (alertType == "MORE") {
+		setCookieLastUserReserveDate(today, endDate);
+		if (confirm("관람하신 작품에 평점을 등록해주세요\n작품당 네이버페이 마일리지 500원씩 적립!\n평점 미등록작 리스트를 확인하시겠습니까?")) {
+			top.location.href = "http://ticket.movie.naver.com/Order/OverdueList.aspx";
+		}
+	}
+}
+
+function setCookieLastUserReserveDate(today, endDate) {
+	var cookieForNotOpenActualPointPopup = jindo.$Cookie();
+	
+	
+	cookieForNotOpenActualPointPopup.remove("lastUserReserveDatetime");
+	cookieForNotOpenActualPointPopup.remove("lastUserReserveCheckDatetime");
+	
+	cookieForNotOpenActualPointPopup.set("lastUserReserveDatetime", endDate, 9999, "movie.naver.com");
+	cookieForNotOpenActualPointPopup.set("lastUserReserveCheckDatetime", today, 9999, "movie.naver.com");
+}
+
+</script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	
+		
+		
+		
+		
+			var alertMessage = "지원되지 않는 브라우저로 서비스 이용에 제한이 있습니다.";
+		
+	
+
+	function getBrowser() {
+		var ua = navigator.userAgent;
+		if (/NAVER/.test(ua)) {
+			return "NAVER_APP";
+		} else if (/IEMobile/.test(ua)) {
+			return "INTERNET_EXPLORER_MOBILE";
+		} else if (/MSIE/.test(ua) || /Trident/.test(ua)) {
+			return "INTERNET_EXPLORER";
+		} else if (/Firefox/.test(ua)) {
+			return "FIREFOX";
+		} else if (/Opera\//.test(ua) || /OPR\//.test(ua)) {
+			return "OPERA";
+		}  else if (/Swing\//.test(ua)) {
+			return "SWING";
+		} else if (/Chrome\//.test(ua) || /CriOS\//.test(ua)) {
+			return "CHROME";
+		} else if (/BAND\//.test(ua)) {
+			return "BAND_APP";
+		} else if (/FBAN\/FBIOS/.test(ua)) {
+			return "FACEBOOK_APP";
+		} else if (/Twitter/.test(ua)) {
+			return "TWITTER_APP";
+		} else if (/KAKAOTALK/.test(ua)) {
+			return "KAKAOTALK_APP";
+		} else if (/Android/.test(ua) && /Safari/.test(ua)) {
+			return "ANDROID_INTERNET_APP";
+		} else if (/Safari/.test(ua)) {
+			return "SAFARI";
+		}
+
+		return "";
+	}
+	
+	if (getBrowser() === "UNKNOWN" && jindo.$Cookie().get("notSupportBrowserAlert") != 'true') {
+		alert(alertMessage);
+		jindo.$Cookie().set("notSupportBrowserAlert", "true", "9999", "movie.naver.com");
+	}
+</script>
+
+
+
+<script type="text/javascript" src="/common/js/lcslog.js"></script>
+<script type="text/javascript" src="/common/js/jindo/component/1.0.2/jindo.Component.min.js"></script>
+<script type="text/javascript" src="/common/js/vendor/jindo.WatchInput.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/common/js/lib/Core.js?20200604115213" charset="UTF-8"></script>
+<script type="text/javascript" src="/common/js/lib/LNB.js?20200604115213" charset="UTF-8"></script>
+<script type="text/javascript" src="/common/js/lib/Search.js?20200604115213" charset="UTF-8"></script>
+
+
+
+	
+	
+		
+	
+
+
+
+
+	
+	
+
+<script type="text/javascript">
+
+// nhn.movie.Search가 jindo 기반이어서 javascript로 전환함
+if (document.addEventListener) {
+	document.addEventListener("DOMContentLoaded", function () {
+		document.removeEventListener("DOMContentLoaded", arguments.callee, false);
+		loadFooter();
+	}, false);
+}
+// Internet Explorer
+else if (document.attachEvent) {
+	// onreadystatechange 는 모든 브라우저가 반환
+	document.attachEvent("onreadystatechange", function () {
+		if (document.readyState == "complete" || document.readyState == 'loaded') {
+			document.detachEvent("onreadystatechange", arguments.callee);
+			loadFooter();
+		}
+	});
+}
+
+function loadFooter() {
+	var goNaver = document.getElementById("lnb_gonaver");
+	goNaver.addEventListener("focus", focusonNaverIcon, false);
+
+	// LNB - 사용처를 못 찾음
+//   	var oLNB = new nhn.movie.LNB();
+	
+	// 상단 검색영역
+	var oSearch = new nhn.movie.Search({
+		area : "jSearchArea",
+		autosearch : "https://auto-movie.naver.com/ac?q_enc=UTF-8&st=1&r_lt=1&n_ext=1&t_koreng=1&r_format=json&r_enc=UTF-8&r_unicode=0&r_escape=1&q=",
+		movelink : "/movie/bi/mi/basic.nhn?code=",
+		peoplelink : "/movie/bi/pi/basic.nhn?code="
+	});
+	
+	getGNB();	
+}
+
+function focusonNaverIcon(event) {
+	event.preventDefault();	// jindo.$Event.CANCEL_DEFAULT 와 동일한 기능으로 추측됨
+	document.getElementById('ipt_tx_srch').value= "";
+	document.getElementById('search_placeholder').style = "display:inline;";
+	if (document.getElementById('jAutoComplate') != undefined && document.getElementById('jAutoComplate') !== null) {
+		document.getElementById('jAutoComplate').style = "display:none;"
+	}
+}
+
+
+window.addEventListener('pageshow', function(event) { lcs_do(); });
+
+document.addEventListener('click', function (event) {
+	var welSource = event.srcElement;	// jindo.$Element(oEvent.element);
+	if (!document.getElementById("gnb").contains(welSource)) {
+		gnbAllLayerClose();
+	}
+});
+</script>
+	
+	<!-- //Footer -->
+			
+</div>
+
+
+</body>
+</html>	
