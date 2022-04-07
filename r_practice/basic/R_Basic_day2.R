@@ -369,7 +369,6 @@ air_narm <- air[!is.na(air$Ozone), ]
 mean(air_narm$Ozone) # 이상값 두 개 제거로 is.na 결과보다 값이 줄어듦
 boxplot(air_narm$Ozone)$stats
 
-
 #################################
 ## 4. 데이터가공 ##
 #################################
@@ -449,8 +448,7 @@ str(avocado)
 #총 판매량과 평균 가격 속성을 지역에 따라 구분하여 각각 요약 
 #dplyr 라이브러리의 group_by와 summarize 함수 사용
 (x_avg <- avocado %>% 
-    group_by(region) %>% 
-    summarize(V_avg = mean(Total.Volume), P_avg = mean(AveragePrice)))
+    summarize(V_avg = sd(Total.Volume), P_avg = mean(AveragePrice)))
 
 #지역별 특징을 연도별로 다시 세분화
 (x_avg <-avocado %>% 
@@ -487,4 +485,6 @@ times = function(x, n) {
   }
   return(total)
 }
-times(3, 100) # 1부터 100까지 수 중 3의 배수의 합을 구함
+times(3, 100) # 1부터 100까지 수 중 3의 배수의 합을 구함 
+
+ 
