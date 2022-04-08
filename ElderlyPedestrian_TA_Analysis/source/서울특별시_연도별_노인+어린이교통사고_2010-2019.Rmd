@@ -1,0 +1,43 @@
+---
+title: "서울시_노인+어린이_교통사고발생건수_2010-2019"
+author: "대전 12조"
+date: '2020 08 13'
+output: html_document
+---
+
+</br>
+
+### 1. loading packages
+```{r}
+library(RColorBrewer)
+library(ggplot2)
+```
+
+</br>
+</br>
+
+### 2. reading data
+```{r}
+data <- read.csv("C:/Users/user/Desktop/최종프로젝트/data/restart/1/서울특별시_연도별_노인+어린이교통사고_2010-2019.csv")
+```
+
+</br>
+</br>
+
+### 3. visualization
+```{r}
+# 2010-2019 노인교통사고/어린이교통사고 추세
+ggplot(data, aes(x=연도, y=합계, fill=구분)) + 
+  geom_bar(stat='identity', position='dodge', alpha=0.2) +
+  geom_line(aes(col=구분), size=1.5, lineend ='round', arrow = arrow(), alpha=0.6) +
+  scale_color_manual(values = c("#ff0000", "#0000ff")) +
+  scale_fill_manual(values = c("#ff0000", "#0000ff")) +
+  scale_x_continuous(breaks=seq(min(data$연도), max(data$연도), 1)) +
+  theme(legend.position = c(0.1, 0.9)) +
+  theme(legend.title=element_blank()) +
+  theme(panel.background = element_blank()) +
+  ylab(" ") +
+  xlab(" ") +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
+```
+

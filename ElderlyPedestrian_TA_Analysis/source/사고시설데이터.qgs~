@@ -1,0 +1,1549 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" version="2.18.24">
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
+    <customproperties/>
+    <layer-tree-layer expanded="1" providerKey="memory" checked="Qt::Checked" id="memory_20200813105833484" source="Polygon?uuid=2c28c9d6-34fe-4e82-82de-08971f07f926&amp;crs=EPSG:5179&amp;field=순번:integer&amp;field=횡단보도관:string&amp;field=상태:string&amp;field=횡단보도종:string&amp;field=가로길이:integer&amp;field=세로길이:integer&amp;field=화살표시수:integer&amp;field=화살표시길:string&amp;field=고가:string&amp;field=구경찰서코:string&amp;field=구코드:string&amp;field=동코드:string&amp;field=지번:string&amp;field=신경찰서코:string&amp;field=작업구분:integer&amp;field=표출구분:integer&amp;field=도로구분:string&amp;field=관할사업소:string&amp;field=신규정규화:string&amp;field=설치일:string&amp;field=교체일:string&amp;field=이력ID:integer&amp;field=공사관리번:string&amp;field=횡단보도_1:string&amp;field=공사형태:string&amp;field=위도:double&amp;field=경도:double" name="버퍼">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="보행자신호등_517920200813025450680" source="C:/Users/user/Desktop/프로젝트/전처리지히/정제데이터/보행자신호등_5179/보행자신호등_5179.shp" name="보행자신호등_5179">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="횡단보도_517920200813024907114" source="C:/Users/user/Desktop/프로젝트/전처리지히/정제데이터/횡단보도_5179/횡단보도_5179.shp" name="횡단보도_5179">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="사고시설데이터_517920200813041411780" source="C:/Users/user/Desktop/프로젝트/전처리지히/정제데이터/사고시설데이터/사고시설데이터_5179.shp" name="사고시설데이터_5179">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="서울시군구_517920200813022341206" source="C:/Users/user/Desktop/지히/서울시군구/서울시군구/서울시군구 5179.shp" name="서울시군구 5179">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Checked" id="Daum_Street20200813041234026" source="&lt;GDAL_WMS>&#xa;  &lt;Service name=&quot;TMS&quot;>&#xa;    &lt;ServerUrl>http://tile.openstreetmap.org/${z}/${x}/${y}.png&lt;/ServerUrl>&#xa;  &lt;/Service>&#xa;  &lt;DataWindow>&#xa;    &lt;UpperLeftX>-20037508.34&lt;/UpperLeftX>&#xa;    &lt;UpperLeftY>20037508.34&lt;/UpperLeftY>&#xa;    &lt;LowerRightX>20037508.34&lt;/LowerRightX>&#xa;    &lt;LowerRightY>-20037508.34&lt;/LowerRightY>&#xa;    &lt;TileLevel>19&lt;/TileLevel>&#xa;    &lt;TileCountX>1&lt;/TileCountX>&#xa;    &lt;TileCountY>1&lt;/TileCountY>&#xa;    &lt;YOrigin>top&lt;/YOrigin>&#xa;  &lt;/DataWindow>&#xa;  &lt;Projection>EPSG:3857&lt;/Projection>&#xa;  &lt;BlockSizeX>256&lt;/BlockSizeX>&#xa;  &lt;BlockSizeY>256&lt;/BlockSizeY>&#xa;  &lt;BandsCount>3&lt;/BandsCount>&#xa;  &lt;Cache />&#xa;&lt;/GDAL_WMS>&#xa;" name="Daum Street">
+      <customproperties/>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <relations/>
+  <mapcanvas>
+    <units>meters</units>
+    <extent>
+      <xmin>174738.94206532125826925</xmin>
+      <ymin>444583.88870249257888645</ymin>
+      <xmax>189896.56383555417414755</xmax>
+      <ymax>458228.3194182621082291</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <projections>1</projections>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=tmerc +lat_0=38 +lon_0=127 +k=1 +x_0=200000 +y_0=500000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>28045</srsid>
+        <srid>5181</srid>
+        <authid>EPSG:5181</authid>
+        <description>Korea 2000 / Central Belt</description>
+        <projectionacronym>tmerc</projectionacronym>
+        <ellipsoidacronym>GRS80</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <layer_coordinate_transform_info>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="all20200813032606382"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="사고시설데이터_517920200813033120596"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="의료기관_517920200813024527081"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5181" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20200813022903967"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="노인교실_517920200813032947245"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5181" srcDatumTransform="-1" destDatumTransform="-1" layerid="서울특별시_노인교실_정보_지번20200813031622707"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="경로당_517920200813025234623"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="보행노인사고다발지역_517920200813022842573"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="서울시_횡단보도_위치정보__좌표계__WGS1984__위경도_1920200813024740371"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5186" srcDatumTransform="-1" destDatumTransform="-1" layerid="보행자신호등_517920200813025450680"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20200813034539409"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="서울_상권20200813025828099"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20200813105833484"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5181" srcDatumTransform="-1" destDatumTransform="-1" layerid="서울시의료기관20200813023247691"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5181" srcDatumTransform="-1" destDatumTransform="-1" layerid="서울특별시_경로당_정보_지번20200813025106067"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20200813103746007"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5181" srcDatumTransform="-1" destDatumTransform="-1" layerid="노인교실_517920200813031659914"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="사고시설데이터_517920200813041411780"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20200813033023480"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20200813032507880"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20200813032751756"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20200813041315912"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20200813023026174"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="신호등없는횡단보도20200813034821159"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="체육시설_517920200813024425533"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="보행노인사고다발지역_버퍼20200813023154593"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="all20200813032550937"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="신호등있는횡단보도_517920200813104110128"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="보행노인사고다발지역20200813104549063"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20200813023005580"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5186" srcDatumTransform="-1" destDatumTransform="-1" layerid="서울특별시_보행자신호등_관련_위경도__5186_20200813025349962"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="횡단보도_517920200813024907114"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="서울시군구_517920200813022341206"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="갯수20200813035359414"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Daum_Street20200813041234026"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20200813023102262"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20200813104227056"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="신호등없는횡단보도_517920200813035224496"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="횡단보도_517920200813024818914"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20200813032835274"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="신호등없는횡단보도20200813035122971"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20200813105807898"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20200813034507440"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="all20200813032341787"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:5179" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20200813034354486"/>
+      <layer_coordinate_transform destAuthId="EPSG:5181" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="서울시_공공체육시설_현황_2019__서울시열린데이터광장20200813024304155"/>
+    </layer_coordinate_transform_info>
+  </mapcanvas>
+  <layer-tree-canvas>
+    <custom-order enabled="0">
+      <item>서울시군구_517920200813022341206</item>
+      <item>횡단보도_517920200813024907114</item>
+      <item>보행자신호등_517920200813025450680</item>
+      <item>Daum_Street20200813041234026</item>
+      <item>사고시설데이터_517920200813041411780</item>
+      <item>memory_20200813105833484</item>
+    </custom-order>
+  </layer-tree-canvas>
+  <legend updateDrawingOrder="true">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="버퍼" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="memory_20200813105833484" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="보행자신호등_5179" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="보행자신호등_517920200813025450680" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="횡단보도_5179" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="횡단보도_517920200813024907114" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="사고시설데이터_5179" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="사고시설데이터_517920200813041411780" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="서울시군구 5179" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="서울시군구_517920200813022341206" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Daum Street" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="Daum_Street20200813041234026" visible="1"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <projectlayers>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>-20037508.33999999985098839</xmin>
+        <ymin>-20037508.33999999985098839</ymin>
+        <xmax>20037508.33999999985098839</xmax>
+        <ymax>20037508.33999999985098839</ymax>
+      </extent>
+      <id>Daum_Street20200813041234026</id>
+      <datasource>&lt;GDAL_WMS>
+  &lt;Service name="TMS">
+    &lt;ServerUrl>http://tile.openstreetmap.org/${z}/${x}/${y}.png&lt;/ServerUrl>
+  &lt;/Service>
+  &lt;DataWindow>
+    &lt;UpperLeftX>-20037508.34&lt;/UpperLeftX>
+    &lt;UpperLeftY>20037508.34&lt;/UpperLeftY>
+    &lt;LowerRightX>20037508.34&lt;/LowerRightX>
+    &lt;LowerRightY>-20037508.34&lt;/LowerRightY>
+    &lt;TileLevel>19&lt;/TileLevel>
+    &lt;TileCountX>1&lt;/TileCountX>
+    &lt;TileCountY>1&lt;/TileCountY>
+    &lt;YOrigin>top&lt;/YOrigin>
+  &lt;/DataWindow>
+  &lt;Projection>EPSG:3857&lt;/Projection>
+  &lt;BlockSizeX>256&lt;/BlockSizeX>
+  &lt;BlockSizeY>256&lt;/BlockSizeY>
+  &lt;BandsCount>3&lt;/BandsCount>
+  &lt;Cache />
+&lt;/GDAL_WMS>
+</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Daum Street</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Value"/>
+        <property key="ol_layer_type" value="OpenStreetMap"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+        <noDataList bandNo="2" useSrcNoData="0"/>
+        <noDataList bandNo="3" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" blueBand="3" greenBand="2" type="multibandcolor" redBand="1">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>memory_20200813105833484</id>
+      <datasource>memory?geometry=Polygon&amp;crs=EPSG:5179&amp;field=%EC%88%9C%EB%B2%88:integer(-1,0)&amp;field=%ED%9A%A1%EB%8B%A8%EB%B3%B4%EB%8F%84%EA%B4%80:string(255,0)&amp;field=%EC%83%81%ED%83%9C:string(255,0)&amp;field=%ED%9A%A1%EB%8B%A8%EB%B3%B4%EB%8F%84%EC%A2%85:string(255,0)&amp;field=%EA%B0%80%EB%A1%9C%EA%B8%B8%EC%9D%B4:integer(-1,0)&amp;field=%EC%84%B8%EB%A1%9C%EA%B8%B8%EC%9D%B4:integer(-1,0)&amp;field=%ED%99%94%EC%82%B4%ED%91%9C%EC%8B%9C%EC%88%98:integer(-1,0)&amp;field=%ED%99%94%EC%82%B4%ED%91%9C%EC%8B%9C%EA%B8%B8:string(255,0)&amp;field=%EA%B3%A0%EA%B0%80:string(255,0)&amp;field=%EA%B5%AC%EA%B2%BD%EC%B0%B0%EC%84%9C%EC%BD%94:string(255,0)&amp;field=%EA%B5%AC%EC%BD%94%EB%93%9C:string(255,0)&amp;field=%EB%8F%99%EC%BD%94%EB%93%9C:string(255,0)&amp;field=%EC%A7%80%EB%B2%88:string(255,0)&amp;field=%EC%8B%A0%EA%B2%BD%EC%B0%B0%EC%84%9C%EC%BD%94:string(255,0)&amp;field=%EC%9E%91%EC%97%85%EA%B5%AC%EB%B6%84:integer(-1,0)&amp;field=%ED%91%9C%EC%B6%9C%EA%B5%AC%EB%B6%84:integer(-1,0)&amp;field=%EB%8F%84%EB%A1%9C%EA%B5%AC%EB%B6%84:string(255,0)&amp;field=%EA%B4%80%ED%95%A0%EC%82%AC%EC%97%85%EC%86%8C:string(255,0)&amp;field=%EC%8B%A0%EA%B7%9C%EC%A0%95%EA%B7%9C%ED%99%94:string(255,0)&amp;field=%EC%84%A4%EC%B9%98%EC%9D%BC:string(255,0)&amp;field=%EA%B5%90%EC%B2%B4%EC%9D%BC:string(255,0)&amp;field=%EC%9D%B4%EB%A0%A5ID:integer(-1,0)&amp;field=%EA%B3%B5%EC%82%AC%EA%B4%80%EB%A6%AC%EB%B2%88:string(255,0)&amp;field=%ED%9A%A1%EB%8B%A8%EB%B3%B4%EB%8F%84_1:string(255,0)&amp;field=%EA%B3%B5%EC%82%AC%ED%98%95%ED%83%9C:string(255,0)&amp;field=%EC%9C%84%EB%8F%84:double(20,5)&amp;field=%EA%B2%BD%EB%8F%84:double(20,5)</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>버퍼</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=tmerc +lat_0=38 +lon_0=127.5 +k=0.9996 +x_0=1000000 +y_0=2000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>28043</srsid>
+          <srid>5179</srid>
+          <authid>EPSG:5179</authid>
+          <description>Korea 2000 / Unified CS</description>
+          <projectionacronym>tmerc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="EUC-KR">memory</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="순번">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="횡단보도관">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="상태">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="횡단보도종">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="가로길이">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="세로길이">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="화살표시수">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="화살표시길">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="고가">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="구경찰서코">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="구코드">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="동코드">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="지번">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="신경찰서코">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="작업구분">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="표출구분">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="도로구분">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="관할사업소">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="신규정규화">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="설치일">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="교체일">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="이력ID">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="공사관리번">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="횡단보도_1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="공사형태">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="위도">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="경도">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="62,21,242,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>이력ID</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="라벨"/>
+        <family fieldname="" name="Gulim"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="순번" index="0" name=""/>
+        <alias field="횡단보도관" index="1" name=""/>
+        <alias field="상태" index="2" name=""/>
+        <alias field="횡단보도종" index="3" name=""/>
+        <alias field="가로길이" index="4" name=""/>
+        <alias field="세로길이" index="5" name=""/>
+        <alias field="화살표시수" index="6" name=""/>
+        <alias field="화살표시길" index="7" name=""/>
+        <alias field="고가" index="8" name=""/>
+        <alias field="구경찰서코" index="9" name=""/>
+        <alias field="구코드" index="10" name=""/>
+        <alias field="동코드" index="11" name=""/>
+        <alias field="지번" index="12" name=""/>
+        <alias field="신경찰서코" index="13" name=""/>
+        <alias field="작업구분" index="14" name=""/>
+        <alias field="표출구분" index="15" name=""/>
+        <alias field="도로구분" index="16" name=""/>
+        <alias field="관할사업소" index="17" name=""/>
+        <alias field="신규정규화" index="18" name=""/>
+        <alias field="설치일" index="19" name=""/>
+        <alias field="교체일" index="20" name=""/>
+        <alias field="이력ID" index="21" name=""/>
+        <alias field="공사관리번" index="22" name=""/>
+        <alias field="횡단보도_1" index="23" name=""/>
+        <alias field="공사형태" index="24" name=""/>
+        <alias field="위도" index="25" name=""/>
+        <alias field="경도" index="26" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="순번" expression=""/>
+        <default field="횡단보도관" expression=""/>
+        <default field="상태" expression=""/>
+        <default field="횡단보도종" expression=""/>
+        <default field="가로길이" expression=""/>
+        <default field="세로길이" expression=""/>
+        <default field="화살표시수" expression=""/>
+        <default field="화살표시길" expression=""/>
+        <default field="고가" expression=""/>
+        <default field="구경찰서코" expression=""/>
+        <default field="구코드" expression=""/>
+        <default field="동코드" expression=""/>
+        <default field="지번" expression=""/>
+        <default field="신경찰서코" expression=""/>
+        <default field="작업구분" expression=""/>
+        <default field="표출구분" expression=""/>
+        <default field="도로구분" expression=""/>
+        <default field="관할사업소" expression=""/>
+        <default field="신규정규화" expression=""/>
+        <default field="설치일" expression=""/>
+        <default field="교체일" expression=""/>
+        <default field="이력ID" expression=""/>
+        <default field="공사관리번" expression=""/>
+        <default field="횡단보도_1" expression=""/>
+        <default field="공사형태" expression=""/>
+        <default field="위도" expression=""/>
+        <default field="경도" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>보행자신호등_517920200813025450680</id>
+      <datasource>../정제데이터/보행자신호등_5179/보행자신호등_5179.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>보행자신호등_5179</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=tmerc +lat_0=38 +lon_0=127 +k=1 +x_0=200000 +y_0=600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>28050</srsid>
+          <srid>5186</srid>
+          <authid>EPSG:5186</authid>
+          <description>Korea 2000 / Central Belt 2010</description>
+          <projectionacronym>tmerc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="부착대관리">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="상태 (공통">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="부착방식">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="부착대길이">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="고가 (공통">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="부착대방향">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="신호등수량">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="배면등수량">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="신호등종류">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="배면등종류">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="설치일">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="교체일">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="지주관리번">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="신호발광구">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="제조회사">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="작업구분 (">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="표출구분 (">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="신규정규화">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="공사관리번">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="부착대관_1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="이력ID">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="위치정보">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="X좌표">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Y좌표">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="공사형태 (">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="180,108,40,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>이력ID</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="라벨"/>
+        <family fieldname="" name="Gulim"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias field="부착대관리" index="0" name=""/>
+        <alias field="상태 (공통" index="1" name=""/>
+        <alias field="부착방식" index="2" name=""/>
+        <alias field="부착대길이" index="3" name=""/>
+        <alias field="고가 (공통" index="4" name=""/>
+        <alias field="부착대방향" index="5" name=""/>
+        <alias field="신호등수량" index="6" name=""/>
+        <alias field="배면등수량" index="7" name=""/>
+        <alias field="신호등종류" index="8" name=""/>
+        <alias field="배면등종류" index="9" name=""/>
+        <alias field="설치일" index="10" name=""/>
+        <alias field="교체일" index="11" name=""/>
+        <alias field="지주관리번" index="12" name=""/>
+        <alias field="신호발광구" index="13" name=""/>
+        <alias field="제조회사" index="14" name=""/>
+        <alias field="작업구분 (" index="15" name=""/>
+        <alias field="표출구분 (" index="16" name=""/>
+        <alias field="신규정규화" index="17" name=""/>
+        <alias field="공사관리번" index="18" name=""/>
+        <alias field="부착대관_1" index="19" name=""/>
+        <alias field="이력ID" index="20" name=""/>
+        <alias field="위치정보" index="21" name=""/>
+        <alias field="X좌표" index="22" name=""/>
+        <alias field="Y좌표" index="23" name=""/>
+        <alias field="공사형태 (" index="24" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="부착대관리" expression=""/>
+        <default field="상태 (공통" expression=""/>
+        <default field="부착방식" expression=""/>
+        <default field="부착대길이" expression=""/>
+        <default field="고가 (공통" expression=""/>
+        <default field="부착대방향" expression=""/>
+        <default field="신호등수량" expression=""/>
+        <default field="배면등수량" expression=""/>
+        <default field="신호등종류" expression=""/>
+        <default field="배면등종류" expression=""/>
+        <default field="설치일" expression=""/>
+        <default field="교체일" expression=""/>
+        <default field="지주관리번" expression=""/>
+        <default field="신호발광구" expression=""/>
+        <default field="제조회사" expression=""/>
+        <default field="작업구분 (" expression=""/>
+        <default field="표출구분 (" expression=""/>
+        <default field="신규정규화" expression=""/>
+        <default field="공사관리번" expression=""/>
+        <default field="부착대관_1" expression=""/>
+        <default field="이력ID" expression=""/>
+        <default field="위치정보" expression=""/>
+        <default field="X좌표" expression=""/>
+        <default field="Y좌표" expression=""/>
+        <default field="공사형태 (" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>939136.94973349827341735</xmin>
+        <ymin>1939597.76337084476836026</ymin>
+        <xmax>969157.95289274456445128</xmax>
+        <ymax>1963476.59600849123671651</ymax>
+      </extent>
+      <id>사고시설데이터_517920200813041411780</id>
+      <datasource>../정제데이터/사고시설데이터/사고시설데이터_5179.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>사고시설데이터_5179</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=tmerc +lat_0=38 +lon_0=127.5 +k=0.9996 +x_0=1000000 +y_0=2000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>28043</srsid>
+          <srid>5179</srid>
+          <authid>EPSG:5179</authid>
+          <description>Korea 2000 / Unified CS</description>
+          <projectionacronym>tmerc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="EUC-KR">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="장소설명">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="사고건수">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="사상자수">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="사망자수">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="중상자수">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="경상자수">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="부상신고자">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="경도">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="위도">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="_merge">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cctv 개수">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="노인보호구">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="도시공원">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="방지턱 개">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="신호등 개">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="전통시장">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="체육시설">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="횡단보도">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="병원">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="노인교실">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="경로당">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="191,90,164,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>장소설명</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="라벨"/>
+        <family fieldname="" name="Gulim"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias field="장소설명" index="0" name=""/>
+        <alias field="사고건수" index="1" name=""/>
+        <alias field="사상자수" index="2" name=""/>
+        <alias field="사망자수" index="3" name=""/>
+        <alias field="중상자수" index="4" name=""/>
+        <alias field="경상자수" index="5" name=""/>
+        <alias field="부상신고자" index="6" name=""/>
+        <alias field="경도" index="7" name=""/>
+        <alias field="위도" index="8" name=""/>
+        <alias field="_merge" index="9" name=""/>
+        <alias field="cctv 개수" index="10" name=""/>
+        <alias field="노인보호구" index="11" name=""/>
+        <alias field="도시공원" index="12" name=""/>
+        <alias field="방지턱 개" index="13" name=""/>
+        <alias field="신호등 개" index="14" name=""/>
+        <alias field="전통시장" index="15" name=""/>
+        <alias field="체육시설" index="16" name=""/>
+        <alias field="횡단보도" index="17" name=""/>
+        <alias field="병원" index="18" name=""/>
+        <alias field="노인교실" index="19" name=""/>
+        <alias field="경로당" index="20" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;신호등없는&quot;" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="장소설명"/>
+          <column width="-1" hidden="0" type="field" name="사고건수"/>
+          <column width="-1" hidden="0" type="field" name="사상자수"/>
+          <column width="-1" hidden="0" type="field" name="사망자수"/>
+          <column width="-1" hidden="0" type="field" name="중상자수"/>
+          <column width="-1" hidden="0" type="field" name="경상자수"/>
+          <column width="-1" hidden="0" type="field" name="부상신고자"/>
+          <column width="-1" hidden="0" type="field" name="경도"/>
+          <column width="-1" hidden="0" type="field" name="위도"/>
+          <column width="-1" hidden="0" type="field" name="_merge"/>
+          <column width="-1" hidden="0" type="field" name="cctv 개수"/>
+          <column width="-1" hidden="0" type="field" name="노인보호구"/>
+          <column width="-1" hidden="0" type="field" name="도시공원"/>
+          <column width="-1" hidden="0" type="field" name="방지턱 개"/>
+          <column width="-1" hidden="0" type="field" name="신호등 개"/>
+          <column width="-1" hidden="0" type="field" name="전통시장"/>
+          <column width="-1" hidden="0" type="field" name="체육시설"/>
+          <column width="-1" hidden="0" type="field" name="횡단보도"/>
+          <column width="-1" hidden="0" type="field" name="병원"/>
+          <column width="-1" hidden="0" type="field" name="노인교실"/>
+          <column width="-1" hidden="0" type="field" name="신호등없는"/>
+          <column width="-1" hidden="0" type="field" name="경로당"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="장소설명" expression=""/>
+        <default field="사고건수" expression=""/>
+        <default field="사상자수" expression=""/>
+        <default field="사망자수" expression=""/>
+        <default field="중상자수" expression=""/>
+        <default field="경상자수" expression=""/>
+        <default field="부상신고자" expression=""/>
+        <default field="경도" expression=""/>
+        <default field="위도" expression=""/>
+        <default field="_merge" expression=""/>
+        <default field="cctv 개수" expression=""/>
+        <default field="노인보호구" expression=""/>
+        <default field="도시공원" expression=""/>
+        <default field="방지턱 개" expression=""/>
+        <default field="신호등 개" expression=""/>
+        <default field="전통시장" expression=""/>
+        <default field="체육시설" expression=""/>
+        <default field="횡단보도" expression=""/>
+        <default field="병원" expression=""/>
+        <default field="노인교실" expression=""/>
+        <default field="경로당" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "장소설명", '&lt;NULL>' )</previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>935035.23021388286724687</xmin>
+        <ymin>1936665.54807064146734774</ymin>
+        <xmax>972067.56886318337637931</xmax>
+        <ymax>1966987.15818901034072042</ymax>
+      </extent>
+      <id>서울시군구_517920200813022341206</id>
+      <datasource>../../../지히/서울시군구/서울시군구/서울시군구 5179.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>서울시군구 5179</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=tmerc +lat_0=38 +lon_0=127.5 +k=0.9996 +x_0=1000000 +y_0=2000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>28043</srsid>
+          <srid>5179</srid>
+          <authid>EPSG:5179</authid>
+          <description>Korea 2000 / Unified CS</description>
+          <projectionacronym>tmerc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="SIG_CD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="SIG_ENG_NM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="SIG_KOR_NM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="27,24,212,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="false"/>
+        <property key="labeling/bufferJoinStyle" value="128"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="false"/>
+        <property key="labeling/enabled" value="false"/>
+        <property key="labeling/fieldName" value=""/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="Gulim"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="9"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="25"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="4294967295"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value=""/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="1"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>67</layerTransparency>
+      <displayfield>SIG_CD</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="라벨"/>
+        <family fieldname="" name="Gulim"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="Gulim,9,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias field="SIG_CD" index="0" name=""/>
+        <alias field="SIG_ENG_NM" index="1" name=""/>
+        <alias field="SIG_KOR_NM" index="2" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="SIG_CD"/>
+          <column width="-1" hidden="0" type="field" name="SIG_ENG_NM"/>
+          <column width="-1" hidden="0" type="field" name="SIG_KOR_NM"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="SIG_CD" expression=""/>
+        <default field="SIG_ENG_NM" expression=""/>
+        <default field="SIG_KOR_NM" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>935459.39858920220285654</xmin>
+        <ymin>1937363.640399667667225</ymin>
+        <xmax>972343.35669407492969185</xmax>
+        <ymax>1966215.45851327083073556</ymax>
+      </extent>
+      <id>횡단보도_517920200813024907114</id>
+      <datasource>../정제데이터/횡단보도_5179/횡단보도_5179.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>횡단보도_5179</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=tmerc +lat_0=38 +lon_0=127.5 +k=0.9996 +x_0=1000000 +y_0=2000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>28043</srsid>
+          <srid>5179</srid>
+          <authid>EPSG:5179</authid>
+          <description>Korea 2000 / Unified CS</description>
+          <projectionacronym>tmerc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="순번">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="횡단보도관">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="상태">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="횡단보도종">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="가로길이">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="세로길이">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="화살표시수">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="화살표시길">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="고가">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="구경찰서코">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="구코드">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="동코드">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="지번">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="신경찰서코">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="작업구분">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="표출구분">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="도로구분">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="관할사업소">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="신규정규화">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="설치일">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="교체일">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="이력ID">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="공사관리번">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="횡단보도_1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="공사형태">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="위도">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="경도">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="137,170,27,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>이력ID</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="라벨"/>
+        <family fieldname="" name="Gulim"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias field="순번" index="0" name=""/>
+        <alias field="횡단보도관" index="1" name=""/>
+        <alias field="상태" index="2" name=""/>
+        <alias field="횡단보도종" index="3" name=""/>
+        <alias field="가로길이" index="4" name=""/>
+        <alias field="세로길이" index="5" name=""/>
+        <alias field="화살표시수" index="6" name=""/>
+        <alias field="화살표시길" index="7" name=""/>
+        <alias field="고가" index="8" name=""/>
+        <alias field="구경찰서코" index="9" name=""/>
+        <alias field="구코드" index="10" name=""/>
+        <alias field="동코드" index="11" name=""/>
+        <alias field="지번" index="12" name=""/>
+        <alias field="신경찰서코" index="13" name=""/>
+        <alias field="작업구분" index="14" name=""/>
+        <alias field="표출구분" index="15" name=""/>
+        <alias field="도로구분" index="16" name=""/>
+        <alias field="관할사업소" index="17" name=""/>
+        <alias field="신규정규화" index="18" name=""/>
+        <alias field="설치일" index="19" name=""/>
+        <alias field="교체일" index="20" name=""/>
+        <alias field="이력ID" index="21" name=""/>
+        <alias field="공사관리번" index="22" name=""/>
+        <alias field="횡단보도_1" index="23" name=""/>
+        <alias field="공사형태" index="24" name=""/>
+        <alias field="위도" index="25" name=""/>
+        <alias field="경도" index="26" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="순번" expression=""/>
+        <default field="횡단보도관" expression=""/>
+        <default field="상태" expression=""/>
+        <default field="횡단보도종" expression=""/>
+        <default field="가로길이" expression=""/>
+        <default field="세로길이" expression=""/>
+        <default field="화살표시수" expression=""/>
+        <default field="화살표시길" expression=""/>
+        <default field="고가" expression=""/>
+        <default field="구경찰서코" expression=""/>
+        <default field="구코드" expression=""/>
+        <default field="동코드" expression=""/>
+        <default field="지번" expression=""/>
+        <default field="신경찰서코" expression=""/>
+        <default field="작업구분" expression=""/>
+        <default field="표출구분" expression=""/>
+        <default field="도로구분" expression=""/>
+        <default field="관할사업소" expression=""/>
+        <default field="신규정규화" expression=""/>
+        <default field="설치일" expression=""/>
+        <default field="교체일" expression=""/>
+        <default field="이력ID" expression=""/>
+        <default field="공사관리번" expression=""/>
+        <default field="횡단보도_1" expression=""/>
+        <default field="공사형태" expression=""/>
+        <default field="위도" expression=""/>
+        <default field="경도" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+  </projectlayers>
+  <properties>
+    <Measurement>
+      <DistanceUnits type="QString"></DistanceUnits>
+      <AreaUnits type="QString"></AreaUnits>
+    </Measurement>
+    <SpatialRefSys>
+      <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
+      <ProjectCRSID type="int">3452</ProjectCRSID>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <Gui>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+    </Gui>
+    <Digitizing>
+      <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
+      <LayerSnappingList type="QStringList">
+        <value>보행자신호등_517920200813025450680</value>
+        <value>사고시설데이터_517920200813041411780</value>
+        <value>서울시군구_517920200813022341206</value>
+        <value>횡단보도_517920200813024907114</value>
+      </LayerSnappingList>
+      <LayerSnappingEnabledList type="QStringList">
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+      </LayerSnappingEnabledList>
+      <SnappingMode type="QString">current_layer</SnappingMode>
+      <AvoidIntersectionsList type="QStringList"/>
+      <LayerSnappingToleranceUnitList type="QStringList">
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+      </LayerSnappingToleranceUnitList>
+      <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+      </LayerSnapToList>
+      <DefaultSnapType type="QString">off</DefaultSnapType>
+      <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
+      <LayerSnappingToleranceList type="QStringList">
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+      </LayerSnappingToleranceList>
+    </Digitizing>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+    </PositionPrecision>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+  </properties>
+  <visibility-presets/>
+</qgis>

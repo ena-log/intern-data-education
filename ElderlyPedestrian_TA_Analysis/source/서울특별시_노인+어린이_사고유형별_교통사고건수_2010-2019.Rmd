@@ -1,0 +1,68 @@
+---
+title: "서울특별시_노인+어린이_사고유형별_교통사고건수_2010-2019"
+author: "대전 12조"
+date: '2020 08 13'
+output: html_document
+---
+
+</br>
+
+### 1. loading packages
+```{r}
+library(dplyr)
+library(gridExtra)
+library(ggplot2)
+```
+
+</br>
+</br>
+
+### 2. reading data
+```{r}
+old <- read.csv("C:/Users/user/Desktop/최종프로젝트/data/restart/서울특별시_노인_사고유형별.csv")
+child <- read.csv("C:/Users/user/Desktop/최종프로젝트/data/restart/서울특별시_어린이_사고유형별.csv")
+```
+
+</br>
+</br>
+
+### 3. preprocessing data
+```{r}
+# 노인교통사고 사고유형별 건수 계산
+old1 <- old %>% group_by(사고유형) %>% summarise(n=n()) %>% arrange(-n)
+
+# 어린이교통사고 사고유형별 건수 계산
+child1 <- child %>% group_by(사고유형) %>% summarise(n=n()) %>% arrange(-n)
+```
+
+</br>
+</br>
+
+4. visualization
+```{r}
+# 노인 교통사고유형별 비율
+a <- ggplot(old1, aes(x="", y=n, fill=사고유형)) +
+  geom_bar(width=1, stat='identity', col='white') +
+  coord_polar("y", start=0) +
+  geom_text(aes(label = paste0(round(n/14053*100,1),"%")), 
+            position = position_stack(vjust = 0.5)) +
+  theme_void() +
+  theme(legend.title=element_blank()) +
+  ggtitle('노인 교통사고 유형별 비율') +
+  theme(plot.title = element_text(hjust = 0.5))
+
+# 어린이 교통사고유형별 비율
+b <- ggplot(child1, aes(x="", y=n, fill=사고유형)) +
+  geom_bar(width=1, stat='identity', col='white') +
+  coord_polar("y", start=0) +
+  geom_text(aes(label = paste0(round(n/1177*100,1),"%")), 
+            position = position_stack(vjust = 0.5)) +
+  theme_void() +
+  theme(legend.title=element_blank()) +
+  ggtitle('어린이 교통사고 유형별 비율') +
+  theme(plot.title = element_text(hjust = 0.5))
+
+# 한 화면에 나타내기
+grid.arrange(a, b)
+```
+

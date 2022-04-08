@@ -1,0 +1,39 @@
+---
+title: "서울특별시_노인+어린이_사고건수+사망자수+사망률_2010-2019"
+author: "대전 12조"
+date: '2020 08 13'
+output: html_document
+---
+
+</br>
+
+### 1. loading packages
+```{r}
+library(RColorBrewer)
+library(ggplot2)
+```
+
+</br>
+</br>
+
+### 2. reading data
+```{r}
+die <- read.csv("C:/Users/user/Desktop/최종프로젝트/data/restart/2/서울특별시_노인+어린이_사고건수+사망자수+사망률_2010-2019.csv")
+```
+
+</br>
+</br>
+
+### 3. visualization
+```{r}
+# 노인, 어린이 연도별 사망률
+ggplot(die, aes(x=연도, y=사망률, fill=구분)) + 
+  geom_bar(stat='identity', position = position_dodge(width = 0.5), alpha=0.8) +
+  scale_x_continuous(breaks=seq(min(die$연도), max(die$연도), 1)) +
+  coord_flip() +
+  theme(legend.title=element_blank()) +
+  theme(panel.background = element_blank()) +
+  scale_x_continuous(breaks=seq(min(die$연도), max(die$연도), 1)) +
+  theme(legend.position = c(0.9, 0.5)) +
+  xlab(" ")
+```
